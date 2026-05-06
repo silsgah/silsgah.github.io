@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Kwabla Gah — AI Researcher & Computer Science Educator</title>
+    <meta name="description" content="Portfolio of Silas Kwabla Gah — PhD Candidate in Computer Science, AI Researcher, and University Lecturer specializing in Foundation Model Adaptation and Few-Shot Learning.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">S<span class="accent">.</span>Gah</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <p class="hero-greeting animate-in">Hello, I'm</p>
+            <h1 class="hero-name animate-in delay-1">Silas Kwabla <span class="accent">Gah</span></h1>
+            <p class="hero-title animate-in delay-2">AI Researcher · Computer Science Educator · Software Engineer</p>
+            <p class="hero-sub animate-in delay-3">PhD Candidate at the University of Ghana — investigating foundation model adaptation at inference time. 4+ years of university teaching. State-of-the-art results in few-shot segmentation.</p>
+            <div class="hero-buttons animate-in delay-4">
+                <a href="#research" class="btn btn-primary">View Research</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-stats animate-in delay-4">
+                <div class="stat"><span class="stat-num">63.58%</span><span class="stat-label">SOTA HM on PASCAL-5i</span></div>
+                <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Years Teaching</span></div>
+                <div class="stat"><span class="stat-num">55+</span><span class="stat-label">Projects Supervised</span></div>
+                <div class="stat"><span class="stat-num">4</span><span class="stat-label">Publications</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a final-year <strong>PhD candidate in Computer Science</strong> at the University of Ghana, researching <strong>foundation model adaptation</strong> and <strong>generalized few-shot semantic segmentation</strong>. My work orchestrates multiple foundation models — CLIP, SAM, DINOv2, and Flan-T5 — in training-free pipelines that achieve state-of-the-art results.</p>
+                    <p>Beyond research, I bring <strong>4+ years of university-level teaching</strong> at GIMPA across Machine Learning, Computer Vision, Deep Learning, Data Structures, Database Systems, and Software Engineering, plus <strong>5+ years of production software engineering</strong> experience building enterprise platforms.</p>
+                    <p>I am passionate about applying AI to African challenges — healthcare, agriculture, and education — and mentoring the next generation of African technologists.</p>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-icon">🎓</div>
+                        <h3>Education</h3>
+                        <ul>
+                            <li><strong>PhD</strong> Computer Science — University of Ghana <em>(in progress)</em></li>
+                            <li><strong>MPhil</strong> Computer Science — University of Ghana</li>
+                            <li><strong>BSc</strong> Computer Science — GIMPA</li>
+                            <li><strong>HND</strong> Electrical Engineering — Accra Technical University</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">☁️</div>
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>AWS Certified Cloud Practitioner</li>
+                            <li>Microsoft Azure Solutions Architect Foundation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section section-alt" id="research">
+        <div class="container">
+            <h2 class="section-title">Research</h2>
+            <p class="section-subtitle">Investigating when and how to adapt foundation models at inference time — and when naive adaptation catastrophically fails.</p>
+            <div class="research-grid">
+                <div class="research-card featured">
+                    <div class="card-badge">BMVC 2026 · Submitting</div>
+                    <h3>Regime-Aware Test-Time Refinement for GFSS</h3>
+                    <p>Identifies two failure modes: catastrophic negative transfer (−28.7 pp) and unreliable SAM boundary refinement. Proposes TIPM with provable convex hull safety guarantees and CgS for CLIP-guided SAM point selection.</p>
+                    <div class="result-highlight">
+                        <span class="result-num">63.58%</span>
+                        <span>Harmonic Mean — PASCAL-5i 5-shot (DINOv2) — SOTA among all real-data GFSS methods</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="card-badge">ICANN 2026 · Under Review</div>
+                    <h3>TIPM-Seg: Test-Time Iterative Prototype Mining</h3>
+                    <p>Formalises catastrophic negative transfer via a two-term distortion bound. Proves random initialisation eliminates both distortion terms in expectation, motivating inference-only adaptation.</p>
+                    <div class="result-highlight">
+                        <span class="result-num">52.3%</span>
+                        <span>Novel mIoU — PASCAL-5i 5-shot (ResNet-50) — surpasses VP, BAM, DIaM, CAPL</span>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subsection-title">Key Theoretical Contributions</h3>
+            <div class="theory-grid">
+                <div class="theory-card">
+                    <h4>Convex Hull Safety Guarantee</h4>
+                    <p>Proved that softmax attention ensures refined prototypes lie within the convex hull of support features regardless of parameter values.</p>
+                </div>
+                <div class="theory-card">
+                    <h4>Two-Term Distortion Bound</h4>
+                    <p>Formal decomposition of negative transfer into attention mismatch and value projection mismatch, both vanishing under random initialisation.</p>
+                </div>
+                <div class="theory-card">
+                    <h4>Query-Conditioned Refinement</h4>
+                    <p>Even randomly initialised attention provides meaningful directional signal, drawing prototypes toward query-relevant support features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <span class="pub-year">2026</span>
+                    <div class="pub-content">
+                        <p class="pub-title"><strong>Gah, S. K.</strong> et al. "Regime-Aware Test-Time Refinement for Generalized Few-Shot Semantic Segmentation."</p>
+                        <p class="pub-venue">British Machine Vision Conference (BMVC 2026) <span class="pub-tag">Submitting</span></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <span class="pub-year">2026</span>
+                    <div class="pub-content">
+                        <p class="pub-title"><strong>Gah, S. K.</strong> et al. "TIPM-Seg: Test-Time Iterative Prototype Mining for Generalized Few-Shot Semantic Segmentation."</p>
+                        <p class="pub-venue">International Conference on Artificial Neural Networks (ICANN 2026) <span class="pub-tag">Under Review</span></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <span class="pub-year">2023</span>
+                    <div class="pub-content">
+                        <p class="pub-title">Appati, J. K., Boante, L. M., Owusu, E., & <strong>Gah, S. K.</strong> "Transfer Learning-Based Encoder-Decoder Model for Skin Lesion Segmentation."</p>
+                        <p class="pub-venue">ICICCT 2023, CCIS Vol. 1841, pp. 117–128, Springer <span class="pub-tag published">Published</span></p>
+                    </div>
+                </div>
+                <div class="pub-item">
+                    <span class="pub-year">2017</span>
+                    <div class="pub-content">
+                        <p class="pub-title"><strong>Gah, S. K.</strong>, Gyamfi, N. K., & Katsriku, F. "Sentiment Analysis of Twitter Feeds using Machine Learning: Effect of Feature Hash Bit Size."</p>
+                        <p class="pub-venue">Communications on Applied Electronics, Vol. 6, No. 9, FCS New York <span class="pub-tag published">Published</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching -->
+    <section class="section section-alt" id="teaching">
+        <div class="container">
+            <h2 class="section-title">Teaching</h2>
+            <p class="section-subtitle">4+ years as Assistant Lecturer at GIMPA (2020–2024), independently teaching undergraduate and graduate courses.</p>
+            <div class="teaching-grid">
+                <div class="course-card">
+                    <div class="course-level">Undergraduate</div>
+                    <h3>Machine Learning</h3>
+                    <p>Supervised learning, neural networks, model evaluation, hands-on Python/scikit-learn labs.</p>
+                    <span class="course-size">40–60 students/semester</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-level grad">Graduate</div>
+                    <h3>Computer Vision & Image Processing</h3>
+                    <p>CNNs, semantic segmentation, Vision Transformers, medical image analysis, OpenCV.</p>
+                    <span class="course-size">25–35 students/semester</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-level grad">Graduate</div>
+                    <h3>Deep Learning & Neural Networks</h3>
+                    <p>Advanced architectures, attention mechanisms, Transformers, practical PyTorch labs.</p>
+                    <span class="course-size">20–30 students/semester</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-level">Undergraduate</div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Arrays, linked lists, trees, graphs, sorting, hashing, Big-O analysis in Java and C++.</p>
+                    <span class="course-size">40–60 students/semester</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-level">Undergraduate</div>
+                    <h3>Database Systems</h3>
+                    <p>Relational design, normalisation, SQL (MySQL/PostgreSQL), NoSQL (MongoDB).</p>
+                    <span class="course-size">40–60 students/semester</span>
+                </div>
+                <div class="course-card">
+                    <div class="course-level">Undergraduate</div>
+                    <h3>Web Technology & Software Engineering</h3>
+                    <p>HTML/CSS/JS, full-stack capstone projects, SDLC, Agile/Scrum, UML, Git/GitHub.</p>
+                    <span class="course-size">40–60 students/semester</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>AI / Deep Learning</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Hugging Face</span>
+                        <span class="tag">scikit-learn</span><span class="tag">LangChain</span><span class="tag">MLflow</span>
+                        <span class="tag">W&B</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Foundation Models</h3>
+                    <div class="skill-tags">
+                        <span class="tag accent-tag">CLIP</span><span class="tag accent-tag">SAM</span>
+                        <span class="tag accent-tag">DINOv2</span><span class="tag accent-tag">Flan-T5</span>
+                        <span class="tag accent-tag">Mask2Former</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Computer Vision</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Semantic Segmentation</span><span class="tag">Few-Shot Learning</span>
+                        <span class="tag">Vision Transformers</span><span class="tag">OpenCV</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python (Expert)</span><span class="tag">JavaScript/TypeScript</span>
+                        <span class="tag">Java</span><span class="tag">C++</span><span class="tag">SQL</span>
+                        <span class="tag">Swift</span><span class="tag">Kotlin</span><span class="tag">Rust</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Web / Full-Stack</h3>
+                    <div class="skill-tags">
+                        <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span>
+                        <span class="tag">Express</span><span class="tag">Django</span><span class="tag">Angular</span>
+                        <span class="tag">Vue.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Databases & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span>
+                        <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">AWS</span>
+                        <span class="tag">Azure</span><span class="tag">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Lead Software Engineer</h3>
+                        <p class="timeline-org">National Ambulance Service (NAS) Digital Platform</p>
+                        <p>Architected end-to-end emergency-response platform: iOS, Android, Node.js/TypeScript backend, Next.js dashboard — serving 34 affiliates. 20+ RESTful APIs, JWT auth, AES-256 encryption.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 – 2025</div>
+                    <div class="timeline-content">
+                        <h3>Lead Developer / Full-Stack Architect</h3>
+                        <p class="timeline-org">EED Soft Consult</p>
+                        <p>Delivered 5+ enterprise applications across Node.js, ASP.NET Core, Django, React, Next.js, Angular, Vue.js. Agile/Scrum, Docker/Kubernetes, multi-cloud deployment.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 – 2023</div>
+                    <div class="timeline-content">
+                        <h3>AI/ML Engineer & Full-Stack Developer</h3>
+                        <p class="timeline-org">Eedsoft Consult</p>
+                        <p>Built production AI systems: RAG document search, conversational AI, OCR/NER pipelines, predictive analytics. MLOps with MLflow, W&B, Docker.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 – Present</div>
+                    <div class="timeline-content">
+                        <h3>PhD Candidate, Computer Science</h3>
+                        <p class="timeline-org">University of Ghana</p>
+                        <p>Generalized Few-Shot Semantic Segmentation via Test-Time Prototype Refinement. State-of-the-art results, 2 papers under review.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 – 2024</div>
+                    <div class="timeline-content">
+                        <h3>Assistant Lecturer</h3>
+                        <p class="timeline-org">GIMPA, Accra</p>
+                        <p>Independently taught ML, Computer Vision, Deep Learning, DSA, Database Systems, Web Tech, Software Engineering. 55+ student projects supervised.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in <span class="accent">Touch</span></h2>
+            <p class="section-subtitle">Interested in collaboration, teaching opportunities, or just want to chat about AI research?</p>
+            <div class="contact-grid">
+                <a href="mailto:gahsilas@gmail.com" class="contact-card">
+                    <span class="contact-icon">✉️</span>
+                    <h3>Email</h3>
+                    <p>gahsilas@gmail.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/silas-gah-46b126294" target="_blank" class="contact-card">
+                    <span class="contact-icon">💼</span>
+                    <h3>LinkedIn</h3>
+                    <p>silas-gah</p>
+                </a>
+                <a href="https://github.com/silasgah" target="_blank" class="contact-card">
+                    <span class="contact-icon">💻</span>
+                    <h3>GitHub</h3>
+                    <p>silasgah</p>
+                </a>
+                <a href="https://scholar.google.com/" target="_blank" class="contact-card">
+                    <span class="contact-icon">📚</span>
+                    <h3>Google Scholar</h3>
+                    <p>Silas K. Gah</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Silas Kwabla Gah. Built with purpose.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
