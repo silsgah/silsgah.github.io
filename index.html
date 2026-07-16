@@ -1,361 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silas Kwabla Gah — AI Researcher & Computer Science Educator</title>
-    <meta name="description" content="Portfolio of Silas Kwabla Gah — PhD Candidate in Computer Science, AI Researcher, and University Lecturer specializing in Foundation Model Adaptation and Few-Shot Learning.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Silas Kwabla Gah — PhD candidate researching foundation models, computer vision, multimodal learning, reinforcement learning, and inference-time coordination." />
+  <title>Silas Kwabla Gah — AI Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#0a0a0f;--bg-alt:#12121a;--surface:#1a1a26;--text:#e8e8ef;--muted:#9a9ab0;--accent:#c0392b;--accent-light:#ef5a4c;--border:#2a2a3a;--success:#27ae60;--warning:#f39c12;--radius:14px;--max:1160px;--transition:.3s cubic-bezier(.4,0,.2,1)}
+    html{scroll-behavior:smooth;scroll-padding-top:84px}body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}a{color:var(--accent-light);text-decoration:none;transition:var(--transition)}a:hover{color:#fff}.container{max-width:var(--max);margin:0 auto}.section{padding:6rem 2rem}.section-alt{background:var(--bg-alt)}.section-title{font-size:clamp(2rem,4vw,2.65rem);font-weight:800;text-align:center;margin-bottom:.8rem;letter-spacing:-1.2px}.section-subtitle{text-align:center;color:var(--muted);max-width:760px;margin:0 auto 3rem;font-size:1.03rem}.accent{color:var(--accent-light)}
+    .nav{position:fixed;inset:0 0 auto 0;z-index:1000;padding:1rem 0;transition:var(--transition)}.nav.scrolled{background:rgba(10,10,15,.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:.65rem 0}.nav-container{max-width:var(--max);margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}.nav-logo{font-size:1.45rem;font-weight:800;color:#fff}.nav-links{display:flex;list-style:none;gap:1.4rem}.nav-links a{color:var(--muted);font-size:.88rem;font-weight:600}.nav-links a.active,.nav-links a:hover{color:#fff}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer}.nav-toggle span{width:24px;height:2px;background:var(--text)}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:7rem 2rem 4rem;overflow:hidden}.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.035) 1px,transparent 0);background-size:40px 40px}.hero::after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(192,57,43,.16),transparent 65%);top:5%;left:50%;transform:translateX(-50%)}.hero-content{max-width:930px;text-align:center;position:relative;z-index:1}.hero-kicker{font-family:"JetBrains Mono",monospace;font-size:.82rem;color:var(--accent-light);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:.9rem}.hero-name{font-size:clamp(2.8rem,7vw,5.2rem);font-weight:800;line-height:1.05;margin-bottom:1.2rem;letter-spacing:-3px}.hero-title{font-size:clamp(1rem,2vw,1.22rem);color:#d5d5df;margin-bottom:1.3rem;font-weight:600}.hero-sub{font-size:1.03rem;color:var(--muted);max-width:770px;margin:0 auto 2rem;line-height:1.9}.hero-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}.btn{padding:.78rem 1.7rem;border-radius:999px;font-weight:700;font-size:.92rem;display:inline-flex;align-items:center;justify-content:center}.btn-primary{background:var(--accent);color:#fff;border:2px solid var(--accent)}.btn-outline{border:2px solid var(--border);color:var(--text)}.btn:hover{transform:translateY(-2px)}.hero-stats{display:grid;grid-template-columns:repeat(4,minmax(130px,1fr));gap:1rem;max-width:800px;margin:0 auto}.stat{background:rgba(26,26,38,.62);border:1px solid var(--border);border-radius:12px;padding:1rem}.stat-num{display:block;font-size:1.5rem;font-weight:800;color:#fff;font-family:"JetBrains Mono",monospace}.stat-label{display:block;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:.3rem}
+    .vision-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem}.vision-card,.focus-card,.research-card,.skill-group,.download-card,.contact-card,.news-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}.vision-card,.focus-card{padding:2rem}.vision-card p{color:var(--muted);margin-bottom:1rem}.focus-list{display:grid;gap:.8rem;margin-top:1rem}.focus-item{border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;background:var(--bg);font-size:.9rem;color:var(--muted)}.focus-item strong{color:var(--text)}
+    .research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}.research-card{padding:2rem;transition:var(--transition)}.research-card:hover,.download-card:hover,.contact-card:hover{border-color:var(--accent);transform:translateY(-4px)}.research-card.featured{border-color:var(--accent);background:linear-gradient(135deg,rgba(192,57,43,.09),transparent)}.card-badge{font-family:"JetBrains Mono",monospace;font-size:.72rem;color:var(--accent-light);font-weight:600;text-transform:uppercase;margin-bottom:.85rem}.research-card h3{font-size:1.18rem;margin-bottom:.75rem}.research-card p{color:var(--muted);font-size:.91rem;margin-bottom:1rem}.result-highlight{margin-top:1.15rem;padding:1rem;background:rgba(192,57,43,.1);border-radius:9px;display:flex;gap:1rem;align-items:center}.result-num{font-family:"JetBrains Mono",monospace;font-size:1.3rem;font-weight:800;color:var(--accent-light);white-space:nowrap}.result-copy{font-size:.8rem;color:var(--muted)}.card-links{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.1rem;font-size:.84rem;font-weight:700}
+    .pub-list{max-width:920px;margin:0 auto}.pub-group-title{margin:2.2rem 0 .8rem;font-size:1rem;text-transform:uppercase;letter-spacing:1px}.pub-item{display:grid;grid-template-columns:72px 1fr;gap:1.2rem;padding:1.35rem 0;border-bottom:1px solid var(--border)}.pub-year{font-family:"JetBrains Mono",monospace;color:var(--accent-light);font-weight:600;font-size:.9rem}.pub-title{line-height:1.55;margin-bottom:.35rem}.pub-venue{color:var(--muted);font-size:.86rem}.pub-tag{display:inline-block;font-size:.67rem;padding:3px 8px;border-radius:999px;background:rgba(192,57,43,.15);color:var(--accent-light);font-weight:700;margin-left:.45rem;text-transform:uppercase}.pub-tag.published{background:rgba(39,174,96,.15);color:var(--success)}.pub-tag.preprint{background:rgba(243,156,18,.15);color:var(--warning)}
+    .news-list{max-width:850px;margin:0 auto;display:grid;gap:1rem}.news-item{display:grid;grid-template-columns:130px 1fr;gap:1.2rem;padding:1.05rem 1.2rem}.news-date{font-family:"JetBrains Mono",monospace;color:var(--accent-light);font-size:.82rem;font-weight:600}.news-copy{color:var(--muted);font-size:.9rem}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem}.skill-group{padding:1.45rem}.skill-group h3{font-size:.95rem;margin-bottom:1rem}.skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}.tag{font-size:.77rem;padding:5px 11px;border-radius:999px;background:var(--bg);border:1px solid var(--border);color:var(--muted)}.accent-tag{color:var(--accent-light);background:rgba(192,57,43,.08);border-color:rgba(192,57,43,.35)}
+    .timeline{position:relative;max-width:820px;margin:0 auto;padding-left:2rem}.timeline::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--border)}.timeline-item{position:relative;padding-bottom:2.2rem}.timeline-dot{position:absolute;left:-2rem;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg-alt);transform:translateX(-5px)}.timeline-date{font-family:"JetBrains Mono",monospace;color:var(--accent-light);font-size:.8rem}.timeline-content h3{margin:.15rem 0;font-size:1.08rem}.timeline-org{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:.45rem}.timeline-content p:last-child{color:var(--muted);font-size:.88rem}
+    .downloads-grid,.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.download-card,.contact-card{display:block;padding:1.4rem;text-align:center;transition:var(--transition)}.download-card h3,.contact-card h3{font-size:.95rem;color:var(--text);margin-bottom:.3rem}.download-card p,.contact-card p{font-size:.8rem;color:var(--muted);word-break:break-word}.footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem}.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+    @media(max-width:900px){.hero-stats{grid-template-columns:repeat(2,1fr)}.vision-grid,.research-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.downloads-grid,.contact-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:768px){.nav-toggle{display:flex}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(10,10,15,.98);flex-direction:column;padding:1.5rem 2rem;gap:1rem;border-bottom:1px solid var(--border)}.nav-links.open{display:flex}.hero-buttons{flex-direction:column;align-items:center}.pub-item,.news-item{grid-template-columns:1fr;gap:.45rem}}
+    @media(max-width:520px){.section{padding:4.5rem 1.2rem}.hero{padding-left:1.2rem;padding-right:1.2rem}.hero-stats,.skills-grid,.downloads-grid,.contact-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">S<span class="accent">.</span>Gah</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-content">
-            <p class="hero-greeting animate-in">Hello, I'm</p>
-            <h1 class="hero-name animate-in delay-1">Silas Kwabla <span class="accent">Gah</span></h1>
-            <p class="hero-title animate-in delay-2">AI Researcher · Computer Science Educator · Software Engineer</p>
-            <p class="hero-sub animate-in delay-3">PhD Candidate at the University of Ghana — investigating foundation model adaptation at inference time. 4+ years of university teaching. State-of-the-art results in few-shot segmentation.</p>
-            <div class="hero-buttons animate-in delay-4">
-                <a href="#research" class="btn btn-primary">View Research</a>
-                <a href="#contact" class="btn btn-outline">Get in Touch</a>
-            </div>
-            <div class="hero-stats animate-in delay-4">
-                <div class="stat"><span class="stat-num">63.58%</span><span class="stat-label">SOTA HM on PASCAL-5i</span></div>
-                <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Years Teaching</span></div>
-                <div class="stat"><span class="stat-num">55+</span><span class="stat-label">Projects Supervised</span></div>
-                <div class="stat"><span class="stat-num">4</span><span class="stat-label">Publications</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2 class="section-title">About <span class="accent">Me</span></h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a final-year <strong>PhD candidate in Computer Science</strong> at the University of Ghana, researching <strong>foundation model adaptation</strong> and <strong>generalized few-shot semantic segmentation</strong>. My work orchestrates multiple foundation models — CLIP, SAM, DINOv2, and Flan-T5 — in training-free pipelines that achieve state-of-the-art results.</p>
-                    <p>Beyond research, I bring <strong>4+ years of university-level teaching</strong> at GIMPA across Machine Learning, Computer Vision, Deep Learning, Data Structures, Database Systems, and Software Engineering, plus <strong>5+ years of production software engineering</strong> experience building enterprise platforms.</p>
-                    <p>I am passionate about applying AI to African challenges — healthcare, agriculture, and education — and mentoring the next generation of African technologists.</p>
-                </div>
-                <div class="about-cards">
-                    <div class="info-card">
-                        <div class="info-icon">🎓</div>
-                        <h3>Education</h3>
-                        <ul>
-                            <li><strong>PhD</strong> Computer Science — University of Ghana <em>(in progress)</em></li>
-                            <li><strong>MPhil</strong> Computer Science — University of Ghana</li>
-                            <li><strong>BSc</strong> Computer Science — GIMPA</li>
-                            <li><strong>HND</strong> Electrical Engineering — Accra Technical University</li>
-                        </ul>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">☁️</div>
-                        <h3>Certifications</h3>
-                        <ul>
-                            <li>AWS Certified Cloud Practitioner</li>
-                            <li>Microsoft Azure Solutions Architect Foundation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research -->
-    <section class="section section-alt" id="research">
-        <div class="container">
-            <h2 class="section-title">Research</h2>
-            <p class="section-subtitle">Investigating when and how to adapt foundation models at inference time — and when naive adaptation catastrophically fails.</p>
-            <div class="research-grid">
-                <div class="research-card featured">
-                    <div class="card-badge">BMVC 2026 · Submitting</div>
-                    <h3>Regime-Aware Test-Time Refinement for GFSS</h3>
-                    <p>Identifies two failure modes: catastrophic negative transfer (−28.7 pp) and unreliable SAM boundary refinement. Proposes TIPM with provable convex hull safety guarantees and CgS for CLIP-guided SAM point selection.</p>
-                    <div class="result-highlight">
-                        <span class="result-num">63.58%</span>
-                        <span>Harmonic Mean — PASCAL-5i 5-shot (DINOv2) — SOTA among all real-data GFSS methods</span>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <div class="card-badge">ICANN 2026 · Under Review</div>
-                    <h3>TIPM-Seg: Test-Time Iterative Prototype Mining</h3>
-                    <p>Formalises catastrophic negative transfer via a two-term distortion bound. Proves random initialisation eliminates both distortion terms in expectation, motivating inference-only adaptation.</p>
-                    <div class="result-highlight">
-                        <span class="result-num">52.3%</span>
-                        <span>Novel mIoU — PASCAL-5i 5-shot (ResNet-50) — surpasses VP, BAM, DIaM, CAPL</span>
-                    </div>
-                </div>
-            </div>
-            <h3 class="subsection-title">Key Theoretical Contributions</h3>
-            <div class="theory-grid">
-                <div class="theory-card">
-                    <h4>Convex Hull Safety Guarantee</h4>
-                    <p>Proved that softmax attention ensures refined prototypes lie within the convex hull of support features regardless of parameter values.</p>
-                </div>
-                <div class="theory-card">
-                    <h4>Two-Term Distortion Bound</h4>
-                    <p>Formal decomposition of negative transfer into attention mismatch and value projection mismatch, both vanishing under random initialisation.</p>
-                </div>
-                <div class="theory-card">
-                    <h4>Query-Conditioned Refinement</h4>
-                    <p>Even randomly initialised attention provides meaningful directional signal, drawing prototypes toward query-relevant support features.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications -->
-    <section class="section" id="publications">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="pub-list">
-                <div class="pub-item">
-                    <span class="pub-year">2026</span>
-                    <div class="pub-content">
-                        <p class="pub-title"><strong>Gah, S. K.</strong> et al. "Regime-Aware Test-Time Refinement for Generalized Few-Shot Semantic Segmentation."</p>
-                        <p class="pub-venue">British Machine Vision Conference (BMVC 2026) <span class="pub-tag">Submitting</span></p>
-                    </div>
-                </div>
-                <div class="pub-item">
-                    <span class="pub-year">2026</span>
-                    <div class="pub-content">
-                        <p class="pub-title"><strong>Gah, S. K.</strong> et al. "TIPM-Seg: Test-Time Iterative Prototype Mining for Generalized Few-Shot Semantic Segmentation."</p>
-                        <p class="pub-venue">International Conference on Artificial Neural Networks (ICANN 2026) <span class="pub-tag">Under Review</span></p>
-                    </div>
-                </div>
-                <div class="pub-item">
-                    <span class="pub-year">2023</span>
-                    <div class="pub-content">
-                        <p class="pub-title">Appati, J. K., Boante, L. M., Owusu, E., & <strong>Gah, S. K.</strong> "Transfer Learning-Based Encoder-Decoder Model for Skin Lesion Segmentation."</p>
-                        <p class="pub-venue">ICICCT 2023, CCIS Vol. 1841, pp. 117–128, Springer <span class="pub-tag published">Published</span></p>
-                    </div>
-                </div>
-                <div class="pub-item">
-                    <span class="pub-year">2017</span>
-                    <div class="pub-content">
-                        <p class="pub-title"><strong>Gah, S. K.</strong>, Gyamfi, N. K., & Katsriku, F. "Sentiment Analysis of Twitter Feeds using Machine Learning: Effect of Feature Hash Bit Size."</p>
-                        <p class="pub-venue">Communications on Applied Electronics, Vol. 6, No. 9, FCS New York <span class="pub-tag published">Published</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Teaching -->
-    <section class="section section-alt" id="teaching">
-        <div class="container">
-            <h2 class="section-title">Teaching</h2>
-            <p class="section-subtitle">4+ years as Assistant Lecturer at GIMPA (2020–2024), independently teaching undergraduate and graduate courses.</p>
-            <div class="teaching-grid">
-                <div class="course-card">
-                    <div class="course-level">Undergraduate</div>
-                    <h3>Machine Learning</h3>
-                    <p>Supervised learning, neural networks, model evaluation, hands-on Python/scikit-learn labs.</p>
-                    <span class="course-size">40–60 students/semester</span>
-                </div>
-                <div class="course-card">
-                    <div class="course-level grad">Graduate</div>
-                    <h3>Computer Vision & Image Processing</h3>
-                    <p>CNNs, semantic segmentation, Vision Transformers, medical image analysis, OpenCV.</p>
-                    <span class="course-size">25–35 students/semester</span>
-                </div>
-                <div class="course-card">
-                    <div class="course-level grad">Graduate</div>
-                    <h3>Deep Learning & Neural Networks</h3>
-                    <p>Advanced architectures, attention mechanisms, Transformers, practical PyTorch labs.</p>
-                    <span class="course-size">20–30 students/semester</span>
-                </div>
-                <div class="course-card">
-                    <div class="course-level">Undergraduate</div>
-                    <h3>Data Structures & Algorithms</h3>
-                    <p>Arrays, linked lists, trees, graphs, sorting, hashing, Big-O analysis in Java and C++.</p>
-                    <span class="course-size">40–60 students/semester</span>
-                </div>
-                <div class="course-card">
-                    <div class="course-level">Undergraduate</div>
-                    <h3>Database Systems</h3>
-                    <p>Relational design, normalisation, SQL (MySQL/PostgreSQL), NoSQL (MongoDB).</p>
-                    <span class="course-size">40–60 students/semester</span>
-                </div>
-                <div class="course-card">
-                    <div class="course-level">Undergraduate</div>
-                    <h3>Web Technology & Software Engineering</h3>
-                    <p>HTML/CSS/JS, full-stack capstone projects, SDLC, Agile/Scrum, UML, Git/GitHub.</p>
-                    <span class="course-size">40–60 students/semester</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h3>AI / Deep Learning</h3>
-                    <div class="skill-tags">
-                        <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Hugging Face</span>
-                        <span class="tag">scikit-learn</span><span class="tag">LangChain</span><span class="tag">MLflow</span>
-                        <span class="tag">W&B</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Foundation Models</h3>
-                    <div class="skill-tags">
-                        <span class="tag accent-tag">CLIP</span><span class="tag accent-tag">SAM</span>
-                        <span class="tag accent-tag">DINOv2</span><span class="tag accent-tag">Flan-T5</span>
-                        <span class="tag accent-tag">Mask2Former</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Computer Vision</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Semantic Segmentation</span><span class="tag">Few-Shot Learning</span>
-                        <span class="tag">Vision Transformers</span><span class="tag">OpenCV</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python (Expert)</span><span class="tag">JavaScript/TypeScript</span>
-                        <span class="tag">Java</span><span class="tag">C++</span><span class="tag">SQL</span>
-                        <span class="tag">Swift</span><span class="tag">Kotlin</span><span class="tag">Rust</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Web / Full-Stack</h3>
-                    <div class="skill-tags">
-                        <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span>
-                        <span class="tag">Express</span><span class="tag">Django</span><span class="tag">Angular</span>
-                        <span class="tag">Vue.js</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Databases & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span>
-                        <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">AWS</span>
-                        <span class="tag">Azure</span><span class="tag">CI/CD</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="section section-alt" id="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023 – Present</div>
-                    <div class="timeline-content">
-                        <h3>Lead Software Engineer</h3>
-                        <p class="timeline-org">National Ambulance Service (NAS) Digital Platform</p>
-                        <p>Architected end-to-end emergency-response platform: iOS, Android, Node.js/TypeScript backend, Next.js dashboard — serving 34 affiliates. 20+ RESTful APIs, JWT auth, AES-256 encryption.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024 – 2025</div>
-                    <div class="timeline-content">
-                        <h3>Lead Developer / Full-Stack Architect</h3>
-                        <p class="timeline-org">EED Soft Consult</p>
-                        <p>Delivered 5+ enterprise applications across Node.js, ASP.NET Core, Django, React, Next.js, Angular, Vue.js. Agile/Scrum, Docker/Kubernetes, multi-cloud deployment.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020 – 2023</div>
-                    <div class="timeline-content">
-                        <h3>AI/ML Engineer & Full-Stack Developer</h3>
-                        <p class="timeline-org">Eedsoft Consult</p>
-                        <p>Built production AI systems: RAG document search, conversational AI, OCR/NER pipelines, predictive analytics. MLOps with MLflow, W&B, Docker.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020 – Present</div>
-                    <div class="timeline-content">
-                        <h3>PhD Candidate, Computer Science</h3>
-                        <p class="timeline-org">University of Ghana</p>
-                        <p>Generalized Few-Shot Semantic Segmentation via Test-Time Prototype Refinement. State-of-the-art results, 2 papers under review.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020 – 2024</div>
-                    <div class="timeline-content">
-                        <h3>Assistant Lecturer</h3>
-                        <p class="timeline-org">GIMPA, Accra</p>
-                        <p>Independently taught ML, Computer Vision, Deep Learning, DSA, Database Systems, Web Tech, Software Engineering. 55+ student projects supervised.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get in <span class="accent">Touch</span></h2>
-            <p class="section-subtitle">Interested in collaboration, teaching opportunities, or just want to chat about AI research?</p>
-            <div class="contact-grid">
-                <a href="mailto:gahsilas@gmail.com" class="contact-card">
-                    <span class="contact-icon">✉️</span>
-                    <h3>Email</h3>
-                    <p>gahsilas@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/silas-gah-46b126294" target="_blank" class="contact-card">
-                    <span class="contact-icon">💼</span>
-                    <h3>LinkedIn</h3>
-                    <p>silas-gah</p>
-                </a>
-                <a href="https://github.com/silasgah" target="_blank" class="contact-card">
-                    <span class="contact-icon">💻</span>
-                    <h3>GitHub</h3>
-                    <p>silasgah</p>
-                </a>
-                <a href="https://scholar.google.com/" target="_blank" class="contact-card">
-                    <span class="contact-icon">📚</span>
-                    <h3>Google Scholar</h3>
-                    <p>Silas K. Gah</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Silas Kwabla Gah. Built with purpose.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<nav class="nav" id="nav"><div class="nav-container"><a href="#hero" class="nav-logo">S<span class="accent">.</span>Gah</a><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button><ul class="nav-links" id="navLinks"><li><a href="#vision">Vision</a></li><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#news">News</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#downloads">Documents</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<section class="hero" id="hero"><div class="hero-content"><p class="hero-kicker">Adaptive Foundation Models</p><h1 class="hero-name">Silas Kwabla <span class="accent">Gah</span></h1><p class="hero-title">PhD Candidate · Computer Vision · Foundation Models · Multimodal AI · Reinforcement Learning</p><p class="hero-sub">I develop computational frameworks that enable pretrained foundation models to adapt through inference-time coordination rather than continual task-specific retraining. My research spans feature-space adaptation, geometric coordination, open-vocabulary perception, multimodal reasoning, and reinforcement learning.</p><div class="hero-buttons"><a href="#research" class="btn btn-primary">Explore Research</a><a href="Silas_Kwabla_Gah_Academic_CV.pdf" class="btn btn-outline" target="_blank">Download CV</a><a href="#contact" class="btn btn-outline">Contact</a></div><div class="hero-stats"><div class="stat"><span class="stat-num">3</span><span class="stat-label">Coordination Domains</span></div><div class="stat"><span class="stat-num">63.58%</span><span class="stat-label">PASCAL-5i 5-shot HM</span></div><div class="stat"><span class="stat-num">2D + 3D</span><span class="stat-label">Visual Perception</span></div><div class="stat"><span class="stat-num">RL</span><span class="stat-label">Emerging Research</span></div></div></div></section>
+<section class="section" id="vision"><div class="container"><h2 class="section-title">Research <span class="accent">Vision</span></h2><p class="section-subtitle">Building adaptive foundation models that coordinate pretrained knowledge efficiently at inference time.</p><div class="vision-grid"><article class="vision-card"><p>I am a final-year PhD candidate in Computer Science at the University of Ghana. My doctoral research develops a unified framework for <strong>Inference-Time Coordination</strong>, in which frozen foundation-model representations are selected, related, and resolved during inference without task-specific parameter optimisation.</p><p>The framework is instantiated across three domains: feature-space coordination for generalized few-shot semantic segmentation, geometric coordination for multi-view three-dimensional scene understanding, and semantic coordination for training-free open-vocabulary segmentation.</p><p>My current work extends this programme towards reinforcement learning for multimodal reasoning, with emphasis on process-level reward design, visual grounding verification, and efficient post-training of vision-language models.</p></article><aside class="focus-card"><h3>Current Research Focus</h3><div class="focus-list"><div class="focus-item"><strong>Foundation Models:</strong> CLIP, DINOv2, SAM-family models, Qwen2.5-VL</div><div class="focus-item"><strong>Inference-Time Learning:</strong> non-parametric coordination and arbitration</div><div class="focus-item"><strong>3D Vision:</strong> multi-view projection and semantic consensus</div><div class="focus-item"><strong>Multimodal RL:</strong> GRPO, VERL, process rewards, grounding verification</div></div></aside></div></div></section>
+<section class="section section-alt" id="research"><div class="container"><h2 class="section-title">Research <span class="accent">Programme</span></h2><p class="section-subtitle">Three doctoral contributions unified by one computational principle, followed by an emerging multimodal RL direction.</p><div class="research-grid"><article class="research-card featured"><div class="card-badge">Feature-Space Coordination</div><h3>TIPM-Seg: Test-Time Iterative Prototype Mining</h3><p>Non-parametric prototype refinement for generalized few-shot semantic segmentation. The method coordinates support and query representations at inference time while avoiding dependence on a base-trained refinement network.</p><div class="result-highlight"><span class="result-num">63.58%</span><span class="result-copy">Harmonic Mean on PASCAL-5i 5-shot with a DINOv2 backbone.</span></div><div class="card-links"><a href="#publications">Publication</a><a href="https://github.com/silasgah" target="_blank">Code</a></div></article><article class="research-card"><div class="card-badge">Geometric Coordination</div><h3>Cross-View Semantic Consensus for 3D Point Clouds</h3><p>Training-free reconciliation of dense three-dimensional priors with sparse semantic observations lifted from calibrated image views. Cross-view evidence is aggregated per point to suppress inconsistent observations and recover geometrically coherent predictions.</p><div class="card-links"><a href="#publications">Preprint Status</a><a href="https://github.com/silasgah" target="_blank">Project Repository</a></div></article><article class="research-card"><div class="card-badge">Semantic Coordination</div><h3>OpenV-GFSS: Open-Vocabulary Semantic Arbitration</h3><p>Training-free generalized few-shot segmentation through coordination of promptable segmentation proposals, vision-language embeddings, and few-shot support centroids. The method supports open-vocabulary inference without task-specific parameter updates.</p><div class="card-links"><a href="https://arxiv.org/abs/2506.09474" target="_blank">arXiv</a><a href="https://github.com/silasgah" target="_blank">Code</a></div></article><article class="research-card"><div class="card-badge">Emerging Research</div><h3>Multimodal Reinforcement Learning and Visual Grounding</h3><p>Process-level reward design for vision-language reasoning, combining answer correctness, semantic matching, format validity, and grounding verification. Current experiments investigate GRPO and VERL-based post-training for multimodal foundation models.</p><div class="card-links"><a href="Future_Research_Statement.pdf" target="_blank">Future Research Statement</a></div></article></div></div></section>
+<section class="section" id="publications"><div class="container"><h2 class="section-title">Selected <span class="accent">Publications</span></h2><p class="section-subtitle">Peer-reviewed publications, submitted manuscripts, and active preprints.</p><div class="pub-list"><h3 class="pub-group-title">Submitted and Under Review</h3><div class="pub-item"><span class="pub-year">2026</span><div><p class="pub-title"><strong>Gah, S. K.</strong> et al. “Training-Free Generalized Few-Shot Segmentation through Open-Vocabulary Semantic Arbitration.”</p><p class="pub-venue">WACV 2027 <span class="pub-tag">Under Review</span> · <a href="https://arxiv.org/abs/2506.09474" target="_blank">arXiv:2506.09474</a></p></div></div><div class="pub-item"><span class="pub-year">2026</span><div><p class="pub-title"><strong>Gah, S. K.</strong> et al. “Cross-View Semantic Consensus for Generalized Few-Shot Three-Dimensional Point-Cloud Segmentation.”</p><p class="pub-venue">Preprint pending arXiv moderation <span class="pub-tag preprint">Preprint</span></p></div></div><div class="pub-item"><span class="pub-year">2026</span><div><p class="pub-title"><strong>Gah, S. K.</strong> et al. “Test-Time Iterative Prototype Mining for Generalized Few-Shot Semantic Segmentation.”</p><p class="pub-venue">Revised manuscript submitted to SACAIR 2026 <span class="pub-tag">Submitted</span></p></div></div><h3 class="pub-group-title">Peer-Reviewed Publications</h3><div class="pub-item"><span class="pub-year">2023</span><div><p class="pub-title">Appati, J. K., Boante, L. M., Owusu, E., &amp; <strong>Gah, S. K.</strong> “Transfer Learning-Based Encoder-Decoder Model for Skin Lesion Segmentation.”</p><p class="pub-venue">ICICCT 2023, CCIS Vol. 1841, Springer <span class="pub-tag published">Published</span></p></div></div><div class="pub-item"><span class="pub-year">2017</span><div><p class="pub-title"><strong>Gah, S. K.</strong>, Gyamfi, N. K., &amp; Katsriku, F. “Sentiment Analysis of Twitter Feeds Using Machine Learning.”</p><p class="pub-venue">Communications on Applied Electronics, Vol. 6, No. 9 <span class="pub-tag published">Published</span></p></div></div></div></div></section>
+<section class="section section-alt" id="news"><div class="container"><h2 class="section-title">Research <span class="accent">News</span></h2><p class="section-subtitle">Recent milestones and research activity.</p><div class="news-list"><div class="news-item"><div class="news-date">July 2026</div><div class="news-copy">Cross-View Semantic Consensus submitted to arXiv and pending moderation.</div></div><div class="news-item"><div class="news-date">July 2026</div><div class="news-copy">Completed a unified doctoral thesis framework spanning feature, geometric, and semantic coordination.</div></div><div class="news-item"><div class="news-date">June 2026</div><div class="news-copy">OpenV-GFSS submitted to WACV 2027 and released as arXiv:2506.09474.</div></div><div class="news-item"><div class="news-date">2026</div><div class="news-copy">Started a multimodal reinforcement-learning project focused on process rewards and visual grounding verification.</div></div></div></div></section>
+<section class="section" id="expertise"><div class="container"><h2 class="section-title">Research <span class="accent">Expertise</span></h2><p class="section-subtitle">Methods, models, and infrastructure used across my research programme.</p><div class="skills-grid"><div class="skill-group"><h3>Computer Vision</h3><div class="skill-tags"><span class="tag accent-tag">Semantic Segmentation</span><span class="tag accent-tag">Generalized Few-Shot Learning</span><span class="tag">Open-Vocabulary Perception</span><span class="tag">Visual Grounding</span><span class="tag">Vision Transformers</span></div></div><div class="skill-group"><h3>Foundation Models</h3><div class="skill-tags"><span class="tag accent-tag">CLIP</span><span class="tag accent-tag">DINOv2</span><span class="tag accent-tag">SAM Family</span><span class="tag">Mask2Former</span><span class="tag">Qwen2.5-VL</span><span class="tag">RegionPLC</span></div></div><div class="skill-group"><h3>Multimodal RL</h3><div class="skill-tags"><span class="tag accent-tag">GRPO</span><span class="tag accent-tag">RLVR</span><span class="tag accent-tag">VERL</span><span class="tag">Reward Design</span><span class="tag">Rollout Evaluation</span><span class="tag">Grounding Verification</span></div></div><div class="skill-group"><h3>3D Vision</h3><div class="skill-tags"><span class="tag">Point-Cloud Segmentation</span><span class="tag">Multi-View Projection</span><span class="tag">Camera Geometry</span><span class="tag">Semantic Lifting</span><span class="tag">Open3D</span></div></div><div class="skill-group"><h3>Research Computing</h3><div class="skill-tags"><span class="tag">PyTorch</span><span class="tag">Hugging Face</span><span class="tag">vLLM</span><span class="tag">CUDA Environments</span><span class="tag">MLflow</span><span class="tag">Docker</span><span class="tag">Linux</span></div></div><div class="skill-group"><h3>Software and Systems</h3><div class="skill-tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">C#</span><span class="tag">SQL</span><span class="tag">Kubernetes</span><span class="tag">AWS</span><span class="tag">Azure</span></div></div></div></div></section>
+<section class="section section-alt" id="experience"><div class="container"><h2 class="section-title">Selected <span class="accent">Experience</span></h2><div class="timeline"><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2022–Present</div><div class="timeline-content"><h3>Doctoral Researcher</h3><p class="timeline-org">Department of Computer Science, University of Ghana</p><p>Research on inference-time coordination, generalized few-shot semantic segmentation, open-vocabulary perception, 3D point-cloud segmentation, and multimodal reinforcement learning.</p></div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2020–2024</div><div class="timeline-content"><h3>Assistant Lecturer</h3><p class="timeline-org">Ghana Institute of Management and Public Administration</p><p>Taught Machine Learning, Computer Vision, Deep Learning, Data Structures and Algorithms, Database Systems, Software Engineering, Web Technology, and Object-Oriented Programming.</p></div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2025–Present</div><div class="timeline-content"><h3>Lead Software Engineer</h3><p class="timeline-org">National Ambulance Service Digital Platform</p><p>Led development of offline-first mobile applications, backend integration, synchronization, and operational dashboards for emergency medical workflows.</p></div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2020–Present</div><div class="timeline-content"><h3>Managing Partner and Lead Engineer</h3><p class="timeline-org">EED Soft Consult Ltd</p><p>Designed and deployed enterprise platforms, retrieval systems, AI-assisted applications, and cloud-based software systems.</p></div></div></div></div></section>
+<section class="section" id="downloads"><div class="container"><h2 class="section-title">Application <span class="accent">Documents</span></h2><p class="section-subtitle">Place these PDF files in the same GitHub Pages folder as this HTML file.</p><div class="downloads-grid"><a class="download-card" href="Silas_Kwabla_Gah_Academic_CV.pdf" target="_blank"><h3>Academic CV</h3><p>Research-focused curriculum vitae</p></a><a class="download-card" href="Research_Statement.pdf" target="_blank"><h3>Research Statement</h3><p>Completed doctoral research</p></a><a class="download-card" href="Future_Research_Statement.pdf" target="_blank"><h3>Future Research Statement</h3><p>Postdoctoral research agenda</p></a><a class="download-card" href="Thesis_Synopsis.pdf" target="_blank"><h3>Thesis Synopsis</h3><p>One-page doctoral summary</p></a></div></div></section>
+<section class="section section-alt" id="contact"><div class="container"><h2 class="section-title">Get in <span class="accent">Touch</span></h2><p class="section-subtitle">I welcome postdoctoral, research scientist, and collaborative opportunities in foundation models, computer vision, multimodal learning, and reinforcement learning.</p><div class="contact-grid"><a href="mailto:gahsilas@gmail.com" class="contact-card"><h3>Email</h3><p>gahsilas@gmail.com</p></a><a href="https://www.linkedin.com/in/silas-gah-46b126294" target="_blank" class="contact-card"><h3>LinkedIn</h3><p>silas-gah-46b126294</p></a><a href="https://github.com/silasgah" target="_blank" class="contact-card"><h3>GitHub</h3><p>github.com/silasgah</p></a><a href="https://orcid.org/0000-0002-9349-3435" target="_blank" class="contact-card"><h3>ORCID</h3><p>0000-0002-9349-3435</p></a></div></div></section>
+<footer class="footer"><p>&copy; 2026 Silas Kwabla Gah · Adaptive Foundation Models · Multimodal Learning · Reinforcement Learning</p></footer>
+<script>
+const nav=document.getElementById('nav'),navToggle=document.getElementById('navToggle'),navLinks=document.getElementById('navLinks'),sections=document.querySelectorAll('.section,.hero');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50);let current='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-130)current=s.id});navLinks.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))});navToggle.addEventListener('click',()=>navLinks.classList.toggle('open'));navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));const reveal=document.querySelectorAll('.section-title,.section-subtitle,.vision-card,.focus-card,.research-card,.pub-item,.news-item,.skill-group,.timeline-item,.download-card,.contact-card');reveal.forEach(e=>e.classList.add('reveal'));const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});reveal.forEach(e=>observer.observe(e));
+</script>
 </body>
 </html>
