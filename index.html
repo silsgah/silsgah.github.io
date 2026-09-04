@@ -3,43 +3,684 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Silas Kwabla Gah — PhD candidate researching foundation models, computer vision, multimodal learning, reinforcement learning, and inference-time coordination." />
-  <title>Silas Kwabla Gah — AI Researcher</title>
+  <meta name="description" content="Silas Kwabla Gah — PhD Candidate in Computer Science specializing in Computer Vision, 3D Scene Understanding, Foundation Models, and Multimodal Reinforcement Learning." />
+  <title>Silas Kwabla Gah — Computer Vision & AI Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--bg:#0a0a0f;--bg-alt:#12121a;--surface:#1a1a26;--text:#e8e8ef;--muted:#9a9ab0;--accent:#c0392b;--accent-light:#ef5a4c;--border:#2a2a3a;--success:#27ae60;--warning:#f39c12;--radius:14px;--max:1160px;--transition:.3s cubic-bezier(.4,0,.2,1)}
-    html{scroll-behavior:smooth;scroll-padding-top:84px}body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}a{color:var(--accent-light);text-decoration:none;transition:var(--transition)}a:hover{color:#fff}.container{max-width:var(--max);margin:0 auto}.section{padding:6rem 2rem}.section-alt{background:var(--bg-alt)}.section-title{font-size:clamp(2rem,4vw,2.65rem);font-weight:800;text-align:center;margin-bottom:.8rem;letter-spacing:-1.2px}.section-subtitle{text-align:center;color:var(--muted);max-width:760px;margin:0 auto 3rem;font-size:1.03rem}.accent{color:var(--accent-light)}
-    .nav{position:fixed;inset:0 0 auto 0;z-index:1000;padding:1rem 0;transition:var(--transition)}.nav.scrolled{background:rgba(10,10,15,.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:.65rem 0}.nav-container{max-width:var(--max);margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}.nav-logo{font-size:1.45rem;font-weight:800;color:#fff}.nav-links{display:flex;list-style:none;gap:1.4rem}.nav-links a{color:var(--muted);font-size:.88rem;font-weight:600}.nav-links a.active,.nav-links a:hover{color:#fff}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer}.nav-toggle span{width:24px;height:2px;background:var(--text)}
-    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;padding:7rem 2rem 4rem;overflow:hidden}.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.035) 1px,transparent 0);background-size:40px 40px}.hero::after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(192,57,43,.16),transparent 65%);top:5%;left:50%;transform:translateX(-50%)}.hero-content{max-width:930px;text-align:center;position:relative;z-index:1}.hero-kicker{font-family:"JetBrains Mono",monospace;font-size:.82rem;color:var(--accent-light);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:.9rem}.hero-name{font-size:clamp(2.8rem,7vw,5.2rem);font-weight:800;line-height:1.05;margin-bottom:1.2rem;letter-spacing:-3px}.hero-title{font-size:clamp(1rem,2vw,1.22rem);color:#d5d5df;margin-bottom:1.3rem;font-weight:600}.hero-sub{font-size:1.03rem;color:var(--muted);max-width:770px;margin:0 auto 2rem;line-height:1.9}.hero-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}.btn{padding:.78rem 1.7rem;border-radius:999px;font-weight:700;font-size:.92rem;display:inline-flex;align-items:center;justify-content:center}.btn-primary{background:var(--accent);color:#fff;border:2px solid var(--accent)}.btn-outline{border:2px solid var(--border);color:var(--text)}.btn:hover{transform:translateY(-2px)}.hero-stats{display:grid;grid-template-columns:repeat(4,minmax(130px,1fr));gap:1rem;max-width:800px;margin:0 auto}.stat{background:rgba(26,26,38,.62);border:1px solid var(--border);border-radius:12px;padding:1rem}.stat-num{display:block;font-size:1.5rem;font-weight:800;color:#fff;font-family:"JetBrains Mono",monospace}.stat-label{display:block;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:.3rem}
-    .vision-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem}.vision-card,.focus-card,.research-card,.skill-group,.download-card,.contact-card,.news-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}.vision-card,.focus-card{padding:2rem}.vision-card p{color:var(--muted);margin-bottom:1rem}.focus-list{display:grid;gap:.8rem;margin-top:1rem}.focus-item{border:1px solid var(--border);border-radius:10px;padding:.9rem 1rem;background:var(--bg);font-size:.9rem;color:var(--muted)}.focus-item strong{color:var(--text)}
-    .research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}.research-card{padding:2rem;transition:var(--transition)}.research-card:hover,.download-card:hover,.contact-card:hover{border-color:var(--accent);transform:translateY(-4px)}.research-card.featured{border-color:var(--accent);background:linear-gradient(135deg,rgba(192,57,43,.09),transparent)}.card-badge{font-family:"JetBrains Mono",monospace;font-size:.72rem;color:var(--accent-light);font-weight:600;text-transform:uppercase;margin-bottom:.85rem}.research-card h3{font-size:1.18rem;margin-bottom:.75rem}.research-card p{color:var(--muted);font-size:.91rem;margin-bottom:1rem}.result-highlight{margin-top:1.15rem;padding:1rem;background:rgba(192,57,43,.1);border-radius:9px;display:flex;gap:1rem;align-items:center}.result-num{font-family:"JetBrains Mono",monospace;font-size:1.3rem;font-weight:800;color:var(--accent-light);white-space:nowrap}.result-copy{font-size:.8rem;color:var(--muted)}.card-links{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:1.1rem;font-size:.84rem;font-weight:700}
-    .pub-list{max-width:920px;margin:0 auto}.pub-group-title{margin:2.2rem 0 .8rem;font-size:1rem;text-transform:uppercase;letter-spacing:1px}.pub-item{display:grid;grid-template-columns:72px 1fr;gap:1.2rem;padding:1.35rem 0;border-bottom:1px solid var(--border)}.pub-year{font-family:"JetBrains Mono",monospace;color:var(--accent-light);font-weight:600;font-size:.9rem}.pub-title{line-height:1.55;margin-bottom:.35rem}.pub-venue{color:var(--muted);font-size:.86rem}.pub-tag{display:inline-block;font-size:.67rem;padding:3px 8px;border-radius:999px;background:rgba(192,57,43,.15);color:var(--accent-light);font-weight:700;margin-left:.45rem;text-transform:uppercase}.pub-tag.published{background:rgba(39,174,96,.15);color:var(--success)}.pub-tag.preprint{background:rgba(243,156,18,.15);color:var(--warning)}
-    .news-list{max-width:850px;margin:0 auto;display:grid;gap:1rem}.news-item{display:grid;grid-template-columns:130px 1fr;gap:1.2rem;padding:1.05rem 1.2rem}.news-date{font-family:"JetBrains Mono",monospace;color:var(--accent-light);font-size:.82rem;font-weight:600}.news-copy{color:var(--muted);font-size:.9rem}
-    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.35rem}.skill-group{padding:1.45rem}.skill-group h3{font-size:.95rem;margin-bottom:1rem}.skill-tags{display:flex;flex-wrap:wrap;gap:.5rem}.tag{font-size:.77rem;padding:5px 11px;border-radius:999px;background:var(--bg);border:1px solid var(--border);color:var(--muted)}.accent-tag{color:var(--accent-light);background:rgba(192,57,43,.08);border-color:rgba(192,57,43,.35)}
-    .timeline{position:relative;max-width:820px;margin:0 auto;padding-left:2rem}.timeline::before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--border)}.timeline-item{position:relative;padding-bottom:2.2rem}.timeline-dot{position:absolute;left:-2rem;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg-alt);transform:translateX(-5px)}.timeline-date{font-family:"JetBrains Mono",monospace;color:var(--accent-light);font-size:.8rem}.timeline-content h3{margin:.15rem 0;font-size:1.08rem}.timeline-org{color:var(--muted);font-style:italic;font-size:.9rem;margin-bottom:.45rem}.timeline-content p:last-child{color:var(--muted);font-size:.88rem}
-    .downloads-grid,.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.download-card,.contact-card{display:block;padding:1.4rem;text-align:center;transition:var(--transition)}.download-card h3,.contact-card h3{font-size:.95rem;color:var(--text);margin-bottom:.3rem}.download-card p,.contact-card p{font-size:.8rem;color:var(--muted);word-break:break-word}.footer{text-align:center;padding:2rem;border-top:1px solid var(--border);color:var(--muted);font-size:.82rem}.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-    @media(max-width:900px){.hero-stats{grid-template-columns:repeat(2,1fr)}.vision-grid,.research-grid{grid-template-columns:1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.downloads-grid,.contact-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:768px){.nav-toggle{display:flex}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(10,10,15,.98);flex-direction:column;padding:1.5rem 2rem;gap:1rem;border-bottom:1px solid var(--border)}.nav-links.open{display:flex}.hero-buttons{flex-direction:column;align-items:center}.pub-item,.news-item{grid-template-columns:1fr;gap:.45rem}}
-    @media(max-width:520px){.section{padding:4.5rem 1.2rem}.hero{padding-left:1.2rem;padding-right:1.2rem}.hero-stats,.skills-grid,.downloads-grid,.contact-grid{grid-template-columns:1fr}}
+    :root{
+      --bg:#09090e;--bg-alt:#111118;--surface:#171722;--surface-card:#1c1c2b;--surface-hover:#242438;
+      --text:#ededf5;--muted:#9595aa;--accent:#c0392b;--accent-light:#e74c3c;--accent-cyan:#0ea5e9;
+      --accent-glow:rgba(192,57,43,0.22);--accent-cyan-glow:rgba(14,165,233,0.18);
+      --border:#262638;--border-light:#35354e;
+      --success:#10b981;--warning:#f59e0b;--radius:14px;--max:1180px;--transition:.25s cubic-bezier(.4,0,.2,1)
+    }
+    html{scroll-behavior:smooth;scroll-padding-top:84px}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+    a{color:var(--accent-light);text-decoration:none;transition:var(--transition)}
+    a:hover{color:#fff}
+    .container{max-width:var(--max);margin:0 auto;padding:0 2rem}
+    .section{padding:5.5rem 0}
+    .section-alt{background:var(--bg-alt)}
+    .section-header{text-align:center;max-width:820px;margin:0 auto 3.5rem}
+    .section-kicker{font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--accent-light);font-weight:600;text-transform:uppercase;letter-spacing:2px;margin-bottom:0.6rem}
+    .section-title{font-size:clamp(2rem,3.8vw,2.7rem);font-weight:800;letter-spacing:-1.2px;margin-bottom:0.8rem}
+    .section-subtitle{color:var(--muted);font-size:1.05rem;line-height:1.7}
+    .accent{color:var(--accent-light)}
+    .accent-cyan{color:var(--accent-cyan)}
+
+    /* Navigation */
+    .nav{position:fixed;inset:0 0 auto 0;z-index:1000;padding:1.1rem 0;transition:var(--transition)}
+    .nav.scrolled{background:rgba(9,9,14,0.94);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:0.7rem 0}
+    .nav-container{max-width:var(--max);margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+    .nav-logo{font-size:1.35rem;font-weight:800;color:#fff;display:flex;align-items:center;gap:0.5rem}
+    .nav-badge{font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding:2px 8px;border-radius:6px;background:rgba(192,57,43,0.18);color:var(--accent-light);border:1px solid rgba(192,57,43,0.35);font-weight:600}
+    .nav-links{display:flex;list-style:none;gap:1.5rem;align-items:center}
+    .nav-links a{color:var(--muted);font-size:0.88rem;font-weight:600}
+    .nav-links a.active,.nav-links a:hover{color:#fff}
+    .nav-btn{padding:0.45rem 1rem;border-radius:999px;background:rgba(255,255,255,0.06);border:1px solid var(--border-light);color:var(--text);font-size:0.82rem;font-weight:600;display:inline-flex;align-items:center;gap:0.4rem}
+    .nav-btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer}
+    .nav-toggle span{width:24px;height:2px;background:var(--text)}
+
+    /* Hero */
+    .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;position:relative;padding:7.5rem 2rem 4rem;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,0.04) 1px,transparent 0);background-size:44px 44px}
+    .hero::after{content:"";position:absolute;width:650px;height:650px;border-radius:50%;background:radial-gradient(circle,rgba(192,57,43,0.16),transparent 65%);top:8%;left:50%;transform:translateX(-50%);pointer-events:none}
+    .hero-content{max-width:960px;text-align:center;position:relative;z-index:1}
+    .hero-kicker{font-family:'JetBrains Mono',monospace;font-size:0.85rem;color:var(--accent-light);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:0.9rem}
+    .hero-name{font-size:clamp(2.8rem,6.5vw,5rem);font-weight:800;line-height:1.06;margin-bottom:1.2rem;letter-spacing:-2.5px}
+    .hero-title{font-size:clamp(1.05rem,2vw,1.28rem);color:#dfdfed;margin-bottom:1.2rem;font-weight:600}
+    .hero-sub{font-size:1.05rem;color:var(--muted);max-width:780px;margin:0 auto 2.2rem;line-height:1.85}
+    .hero-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:3.2rem}
+    .btn{padding:0.78rem 1.7rem;border-radius:999px;font-weight:700;font-size:0.92rem;display:inline-flex;align-items:center;gap:0.5rem;transition:var(--transition);cursor:pointer}
+    .btn-primary{background:var(--accent);color:#fff;border:2px solid var(--accent)}
+    .btn-primary:hover{background:var(--accent-light);border-color:var(--accent-light);transform:translateY(-2px);box-shadow:0 8px 24px var(--accent-glow)}
+    .btn-outline{border:2px solid var(--border-light);color:var(--text);background:rgba(255,255,255,0.03)}
+    .btn-outline:hover{border-color:var(--accent-light);color:#fff;transform:translateY(-2px)}
+    .hero-stats{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:1rem;max-width:880px;margin:0 auto}
+    .stat{background:rgba(23,23,34,0.7);border:1px solid var(--border);border-radius:12px;padding:1.1rem;backdrop-filter:blur(10px);transition:var(--transition)}
+    .stat:hover{border-color:var(--border-light);transform:translateY(-2px)}
+    .stat-num{display:block;font-size:1.6rem;font-weight:800;color:#fff;font-family:'JetBrains Mono',monospace}
+    .stat-label{display:block;font-size:0.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin-top:0.3rem}
+
+    /* Projects Section */
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem}
+    .project-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;display:flex;flex-direction:column;justify-content:space-between;transition:var(--transition);position:relative;overflow:hidden}
+    .project-card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:0 18px 36px rgba(0,0,0,0.35)}
+    .project-card.highlight{border-color:rgba(192,57,43,0.6);background:linear-gradient(145deg,rgba(192,57,43,0.08),var(--surface) 60%)}
+    .project-top{margin-bottom:1.5rem}
+    .project-tagline{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.85rem}
+    .project-domain{font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:var(--accent-light);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+    .project-badge{font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding:2px 8px;border-radius:4px;background:rgba(14,165,233,0.12);color:var(--accent-cyan);border:1px solid rgba(14,165,233,0.3)}
+    .project-card h3{font-size:1.25rem;font-weight:800;margin-bottom:0.75rem;line-height:1.35}
+    .project-desc{color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:1.1rem}
+    .project-metrics{padding:0.9rem 1.1rem;background:rgba(0,0,0,0.28);border:1px solid var(--border);border-radius:10px;margin-bottom:1.1rem}
+    .project-metric-val{font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:800;color:var(--accent-light)}
+    .project-metric-desc{font-size:0.78rem;color:var(--muted);margin-top:0.2rem}
+    .project-tech{display:flex;flex-wrap:wrap;gap:0.45rem;margin-bottom:1.4rem}
+    .tech-pill{font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:3px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--border);color:#c5c5d5}
+    .project-links{display:flex;gap:0.9rem;flex-wrap:wrap;align-items:center;font-size:0.86rem;font-weight:700;padding-top:1rem;border-top:1px solid var(--border)}
+    .link-gh{display:inline-flex;align-items:center;gap:0.4rem;color:#fff}
+    .link-gh:hover{color:var(--accent-light)}
+    .link-paper{display:inline-flex;align-items:center;gap:0.4rem;color:var(--accent-cyan)}
+    .link-paper:hover{color:#fff}
+
+    /* Publications */
+    .pub-list{max-width:940px;margin:0 auto;display:grid;gap:1.4rem}
+    .pub-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.6rem 1.8rem;transition:var(--transition);display:grid;grid-template-columns:auto 1fr;gap:1.5rem}
+    .pub-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+    .pub-year{font-family:'JetBrains Mono',monospace;font-size:1.05rem;font-weight:800;color:var(--accent-light);min-width:55px;padding-top:2px}
+    .pub-body h4{font-size:1.08rem;font-weight:700;line-height:1.45;margin-bottom:0.45rem}
+    .pub-authors{color:var(--muted);font-size:0.88rem;margin-bottom:0.45rem}
+    .pub-venue{font-size:0.86rem;font-weight:600;color:#dfdfed;margin-bottom:0.85rem;display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem}
+    .scopus-tag{font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding:2px 9px;border-radius:999px;font-weight:700;text-transform:uppercase}
+    .scopus-top1{background:rgba(16,185,129,0.15);color:var(--success);border:1px solid rgba(16,185,129,0.4)}
+    .scopus-top10{background:rgba(14,165,233,0.15);color:var(--accent-cyan);border:1px solid rgba(14,165,233,0.4)}
+    .scopus-q1{background:rgba(245,158,11,0.15);color:var(--warning);border:1px solid rgba(245,158,11,0.4)}
+    .pub-links{display:flex;gap:1rem;font-size:0.82rem;font-weight:700}
+
+    /* Skills */
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+    .skill-group{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.6rem}
+    .skill-group h3{font-size:1rem;font-weight:700;margin-bottom:1rem;color:#fff;display:flex;align-items:center;gap:0.5rem}
+    .skill-tags{display:flex;flex-wrap:wrap;gap:0.45rem}
+    .tag{font-size:0.78rem;padding:4px 10px;border-radius:8px;background:var(--bg);border:1px solid var(--border);color:var(--muted)}
+    .tag.accent-tag{color:#fff;background:rgba(192,57,43,0.12);border-color:rgba(192,57,43,0.4);font-weight:600}
+
+    /* Documents / Downloads */
+    .downloads-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+    .download-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.6rem;display:flex;flex-direction:column;justify-content:space-between;transition:var(--transition)}
+    .download-card:hover{border-color:var(--accent);transform:translateY(-3px);background:var(--surface-hover)}
+    .download-card h4{font-size:1.05rem;font-weight:700;margin-bottom:0.35rem;color:#fff}
+    .download-card p{font-size:0.82rem;color:var(--muted);margin-bottom:1.1rem;line-height:1.6}
+    .download-link{font-size:0.84rem;font-weight:700;color:var(--accent-light);display:inline-flex;align-items:center;gap:0.35rem}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+    .contact-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;text-align:center;transition:var(--transition)}
+    .contact-card:hover{border-color:var(--accent);transform:translateY(-3px)}
+    .contact-card h4{font-size:0.95rem;color:#fff;margin-bottom:0.35rem}
+    .contact-card p{font-size:0.82rem;color:var(--muted);word-break:break-word}
+
+    .footer{text-align:center;padding:2.5rem 1rem;border-top:1px solid var(--border);color:var(--muted);font-size:0.85rem}
+
+    @media(max-width:960px){
+      .hero-stats{grid-template-columns:repeat(2,1fr)}
+      .projects-grid{grid-template-columns:1fr}
+      .skills-grid{grid-template-columns:repeat(2,1fr)}
+      .downloads-grid{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:768px){
+      .nav-toggle{display:flex}
+      .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(9,9,14,0.98);flex-direction:column;padding:1.5rem 2rem;gap:1.2rem;border-bottom:1px solid var(--border)}
+      .nav-links.open{display:flex}
+      .hero-buttons{flex-direction:column;align-items:center}
+      .pub-card{grid-template-columns:1fr;gap:0.5rem}
+      .downloads-grid,.contact-grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
-<nav class="nav" id="nav"><div class="nav-container"><a href="#hero" class="nav-logo">S<span class="accent">.</span>Gah</a><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button><ul class="nav-links" id="navLinks"><li><a href="#vision">Vision</a></li><li><a href="#research">Research</a></li><li><a href="#publications">Publications</a></li><li><a href="#news">News</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#downloads">Documents</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
-<section class="hero" id="hero"><div class="hero-content"><p class="hero-kicker">Adaptive Foundation Models</p><h1 class="hero-name">Silas Kwabla <span class="accent">Gah</span></h1><p class="hero-title">PhD Candidate · Computer Vision · Foundation Models · Multimodal AI · Reinforcement Learning</p><p class="hero-sub">I develop computational frameworks that enable pretrained foundation models to adapt through inference-time coordination rather than continual task-specific retraining. My research spans feature-space adaptation, geometric coordination, open-vocabulary perception, multimodal reasoning, and reinforcement learning.</p><div class="hero-buttons"><a href="#research" class="btn btn-primary">Explore Research</a><a href="Silas_Kwabla_Gah_Academic_CV.pdf" class="btn btn-outline" target="_blank">Download CV</a><a href="#contact" class="btn btn-outline">Contact</a></div><div class="hero-stats"><div class="stat"><span class="stat-num">3</span><span class="stat-label">Coordination Domains</span></div><div class="stat"><span class="stat-num">63.58%</span><span class="stat-label">PASCAL-5i 5-shot HM</span></div><div class="stat"><span class="stat-num">2D + 3D</span><span class="stat-label">Visual Perception</span></div><div class="stat"><span class="stat-num">RL</span><span class="stat-label">Emerging Research</span></div></div></div></section>
-<section class="section" id="vision"><div class="container"><h2 class="section-title">Research <span class="accent">Vision</span></h2><p class="section-subtitle">Building adaptive foundation models that coordinate pretrained knowledge efficiently at inference time.</p><div class="vision-grid"><article class="vision-card"><p>I am a final-year PhD candidate in Computer Science at the University of Ghana. My doctoral research develops a unified framework for <strong>Inference-Time Coordination</strong>, in which frozen foundation-model representations are selected, related, and resolved during inference without task-specific parameter optimisation.</p><p>The framework is instantiated across three domains: feature-space coordination for generalized few-shot semantic segmentation, geometric coordination for multi-view three-dimensional scene understanding, and semantic coordination for training-free open-vocabulary segmentation.</p><p>My current work extends this programme towards reinforcement learning for multimodal reasoning, with emphasis on process-level reward design, visual grounding verification, and efficient post-training of vision-language models.</p></article><aside class="focus-card"><h3>Current Research Focus</h3><div class="focus-list"><div class="focus-item"><strong>Foundation Models:</strong> CLIP, DINOv2, SAM-family models, Qwen2.5-VL</div><div class="focus-item"><strong>Inference-Time Learning:</strong> non-parametric coordination and arbitration</div><div class="focus-item"><strong>3D Vision:</strong> multi-view projection and semantic consensus</div><div class="focus-item"><strong>Multimodal RL:</strong> GRPO, VERL, process rewards, grounding verification</div></div></aside></div></div></section>
-<section class="section section-alt" id="research"><div class="container"><h2 class="section-title">Research <span class="accent">Programme</span></h2><p class="section-subtitle">Three doctoral contributions unified by one computational principle, followed by an emerging multimodal RL direction.</p><div class="research-grid"><article class="research-card featured"><div class="card-badge">Feature-Space Coordination</div><h3>TIPM-Seg: Test-Time Iterative Prototype Mining</h3><p>Non-parametric prototype refinement for generalized few-shot semantic segmentation. The method coordinates support and query representations at inference time while avoiding dependence on a base-trained refinement network.</p><div class="result-highlight"><span class="result-num">63.58%</span><span class="result-copy">Harmonic Mean on PASCAL-5i 5-shot with a DINOv2 backbone.</span></div><div class="card-links"><a href="#publications">Publication</a><a href="https://github.com/silasgah" target="_blank">Code</a></div></article><article class="research-card"><div class="card-badge">Geometric Coordination</div><h3>Cross-View Semantic Consensus for 3D Point Clouds</h3><p>Training-free reconciliation of dense three-dimensional priors with sparse semantic observations lifted from calibrated image views. Cross-view evidence is aggregated per point to suppress inconsistent observations and recover geometrically coherent predictions.</p><div class="card-links"><a href="#publications">Preprint Status</a><a href="https://github.com/silasgah" target="_blank">Project Repository</a></div></article><article class="research-card"><div class="card-badge">Semantic Coordination</div><h3>OpenV-GFSS: Open-Vocabulary Semantic Arbitration</h3><p>Training-free generalized few-shot segmentation through coordination of promptable segmentation proposals, vision-language embeddings, and few-shot support centroids. The method supports open-vocabulary inference without task-specific parameter updates.</p><div class="card-links"><a href="https://arxiv.org/abs/2506.09474" target="_blank">arXiv</a><a href="https://github.com/silasgah" target="_blank">Code</a></div></article><article class="research-card"><div class="card-badge">Emerging Research</div><h3>Multimodal Reinforcement Learning and Visual Grounding</h3><p>Process-level reward design for vision-language reasoning, combining answer correctness, semantic matching, format validity, and grounding verification. Current experiments investigate GRPO and VERL-based post-training for multimodal foundation models.</p><div class="card-links"><a href="Future_Research_Statement.pdf" target="_blank">Future Research Statement</a></div></article></div></div></section>
-<section class="section" id="publications"><div class="container"><h2 class="section-title">Selected <span class="accent">Publications</span></h2><p class="section-subtitle">Peer-reviewed publications, submitted manuscripts, and active preprints.</p><div class="pub-list"><h3 class="pub-group-title">Submitted and Under Review</h3><div class="pub-item"><span class="pub-year">2026</span><div><p class="pub-title"><strong>Gah, S. K.</strong> et al. “Training-Free Generalized Few-Shot Segmentation through Open-Vocabulary Semantic Arbitration.”</p><p class="pub-venue">WACV 2027 <span class="pub-tag">Under Review</span> · <a href="https://arxiv.org/abs/2506.09474" target="_blank">arXiv:2506.09474</a></p></div></div><div class="pub-item"><span class="pub-year">2026</span><div><p class="pub-title"><strong>Gah, S. K.</strong> et al. “Cross-View Semantic Consensus for Generalized Few-Shot Three-Dimensional Point-Cloud Segmentation.”</p><p class="pub-venue">Preprint pending arXiv moderation <span class="pub-tag preprint">Preprint</span></p></div></div><div class="pub-item"><span class="pub-year">2026</span><div><p class="pub-title"><strong>Gah, S. K.</strong> et al. “Test-Time Iterative Prototype Mining for Generalized Few-Shot Semantic Segmentation.”</p><p class="pub-venue">Revised manuscript submitted to SACAIR 2026 <span class="pub-tag">Submitted</span></p></div></div><h3 class="pub-group-title">Peer-Reviewed Publications</h3><div class="pub-item"><span class="pub-year">2023</span><div><p class="pub-title">Appati, J. K., Boante, L. M., Owusu, E., &amp; <strong>Gah, S. K.</strong> “Transfer Learning-Based Encoder-Decoder Model for Skin Lesion Segmentation.”</p><p class="pub-venue">ICICCT 2023, CCIS Vol. 1841, Springer <span class="pub-tag published">Published</span></p></div></div><div class="pub-item"><span class="pub-year">2017</span><div><p class="pub-title"><strong>Gah, S. K.</strong>, Gyamfi, N. K., &amp; Katsriku, F. “Sentiment Analysis of Twitter Feeds Using Machine Learning.”</p><p class="pub-venue">Communications on Applied Electronics, Vol. 6, No. 9 <span class="pub-tag published">Published</span></p></div></div></div></div></section>
-<section class="section section-alt" id="news"><div class="container"><h2 class="section-title">Research <span class="accent">News</span></h2><p class="section-subtitle">Recent milestones and research activity.</p><div class="news-list"><div class="news-item"><div class="news-date">July 2026</div><div class="news-copy">Cross-View Semantic Consensus submitted to arXiv and pending moderation.</div></div><div class="news-item"><div class="news-date">July 2026</div><div class="news-copy">Completed a unified doctoral thesis framework spanning feature, geometric, and semantic coordination.</div></div><div class="news-item"><div class="news-date">June 2026</div><div class="news-copy">OpenV-GFSS submitted to WACV 2027 and released as arXiv:2506.09474.</div></div><div class="news-item"><div class="news-date">2026</div><div class="news-copy">Started a multimodal reinforcement-learning project focused on process rewards and visual grounding verification.</div></div></div></div></section>
-<section class="section" id="expertise"><div class="container"><h2 class="section-title">Research <span class="accent">Expertise</span></h2><p class="section-subtitle">Methods, models, and infrastructure used across my research programme.</p><div class="skills-grid"><div class="skill-group"><h3>Computer Vision</h3><div class="skill-tags"><span class="tag accent-tag">Semantic Segmentation</span><span class="tag accent-tag">Generalized Few-Shot Learning</span><span class="tag">Open-Vocabulary Perception</span><span class="tag">Visual Grounding</span><span class="tag">Vision Transformers</span></div></div><div class="skill-group"><h3>Foundation Models</h3><div class="skill-tags"><span class="tag accent-tag">CLIP</span><span class="tag accent-tag">DINOv2</span><span class="tag accent-tag">SAM Family</span><span class="tag">Mask2Former</span><span class="tag">Qwen2.5-VL</span><span class="tag">RegionPLC</span></div></div><div class="skill-group"><h3>Multimodal RL</h3><div class="skill-tags"><span class="tag accent-tag">GRPO</span><span class="tag accent-tag">RLVR</span><span class="tag accent-tag">VERL</span><span class="tag">Reward Design</span><span class="tag">Rollout Evaluation</span><span class="tag">Grounding Verification</span></div></div><div class="skill-group"><h3>3D Vision</h3><div class="skill-tags"><span class="tag">Point-Cloud Segmentation</span><span class="tag">Multi-View Projection</span><span class="tag">Camera Geometry</span><span class="tag">Semantic Lifting</span><span class="tag">Open3D</span></div></div><div class="skill-group"><h3>Research Computing</h3><div class="skill-tags"><span class="tag">PyTorch</span><span class="tag">Hugging Face</span><span class="tag">vLLM</span><span class="tag">CUDA Environments</span><span class="tag">MLflow</span><span class="tag">Docker</span><span class="tag">Linux</span></div></div><div class="skill-group"><h3>Software and Systems</h3><div class="skill-tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">C#</span><span class="tag">SQL</span><span class="tag">Kubernetes</span><span class="tag">AWS</span><span class="tag">Azure</span></div></div></div></div></section>
-<section class="section section-alt" id="experience"><div class="container"><h2 class="section-title">Selected <span class="accent">Experience</span></h2><div class="timeline"><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2022–Present</div><div class="timeline-content"><h3>Doctoral Researcher</h3><p class="timeline-org">Department of Computer Science, University of Ghana</p><p>Research on inference-time coordination, generalized few-shot semantic segmentation, open-vocabulary perception, 3D point-cloud segmentation, and multimodal reinforcement learning.</p></div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2020–2024</div><div class="timeline-content"><h3>Assistant Lecturer</h3><p class="timeline-org">Ghana Institute of Management and Public Administration</p><p>Taught Machine Learning, Computer Vision, Deep Learning, Data Structures and Algorithms, Database Systems, Software Engineering, Web Technology, and Object-Oriented Programming.</p></div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2025–Present</div><div class="timeline-content"><h3>Lead Software Engineer</h3><p class="timeline-org">National Ambulance Service Digital Platform</p><p>Led development of offline-first mobile applications, backend integration, synchronization, and operational dashboards for emergency medical workflows.</p></div></div><div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-date">2020–Present</div><div class="timeline-content"><h3>Managing Partner and Lead Engineer</h3><p class="timeline-org">EED Soft Consult Ltd</p><p>Designed and deployed enterprise platforms, retrieval systems, AI-assisted applications, and cloud-based software systems.</p></div></div></div></div></section>
-<section class="section" id="downloads"><div class="container"><h2 class="section-title">Application <span class="accent">Documents</span></h2><p class="section-subtitle">Place these PDF files in the same GitHub Pages folder as this HTML file.</p><div class="downloads-grid"><a class="download-card" href="Silas_Kwabla_Gah_Academic_CV.pdf" target="_blank"><h3>Academic CV</h3><p>Research-focused curriculum vitae</p></a><a class="download-card" href="Research_Statement.pdf" target="_blank"><h3>Research Statement</h3><p>Completed doctoral research</p></a><a class="download-card" href="Future_Research_Statement.pdf" target="_blank"><h3>Future Research Statement</h3><p>Postdoctoral research agenda</p></a><a class="download-card" href="Thesis_Synopsis.pdf" target="_blank"><h3>Thesis Synopsis</h3><p>One-page doctoral summary</p></a></div></div></section>
-<section class="section section-alt" id="contact"><div class="container"><h2 class="section-title">Get in <span class="accent">Touch</span></h2><p class="section-subtitle">I welcome postdoctoral, research scientist, and collaborative opportunities in foundation models, computer vision, multimodal learning, and reinforcement learning.</p><div class="contact-grid"><a href="mailto:gahsilas@gmail.com" class="contact-card"><h3>Email</h3><p>gahsilas@gmail.com</p></a><a href="https://www.linkedin.com/in/silas-gah-46b126294" target="_blank" class="contact-card"><h3>LinkedIn</h3><p>silas-gah-46b126294</p></a><a href="https://github.com/silasgah" target="_blank" class="contact-card"><h3>GitHub</h3><p>github.com/silasgah</p></a><a href="https://orcid.org/0000-0002-9349-3435" target="_blank" class="contact-card"><h3>ORCID</h3><p>0000-0002-9349-3435</p></a></div></div></section>
-<footer class="footer"><p>&copy; 2026 Silas Kwabla Gah · Adaptive Foundation Models · Multimodal Learning · Reinforcement Learning</p></footer>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">
+      Silas Kwabla Gah <span class="nav-badge">PhD · AI</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#projects" class="active">CV &amp; ML Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#research">Doctoral Research</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#downloads">Documents</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/silsgah" target="_blank" class="nav-btn">GitHub Profile ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <p class="hero-kicker">Department of Computer Science · University of Ghana</p>
+    <h1 class="hero-name">Silas Kwabla <span class="accent">Gah</span></h1>
+    <p class="hero-title">PhD Candidate in Computer Science · 3D Computer Vision · Foundation Models · Multimodal RL</p>
+    <p class="hero-sub">
+      I research and build computational frameworks for <strong>inference-time coordination ($\Delta\theta=0$)</strong> of frozen visual foundation models, multi-view geometric scene understanding, and self-supervised reinforcement learning with verifiable process rewards.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">Completed CV / ML Projects ↓</a>
+      <a href="#publications" class="btn btn-outline">Selected Publications</a>
+      <a href="Silas_Kwabla_Gah_Academic_CV.pdf" class="btn btn-outline" target="_blank">Download CV (PDF)</a>
+      <a href="https://github.com/silsgah" class="btn btn-outline" target="_blank">GitHub @silsgah ↗</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">33.68%</span>
+        <span class="stat-label">ScanNet200 3D SOTA (HM)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">+9.62 pts</span>
+        <span class="stat-label">Gain on ScanNet++ ($\Delta\theta=0$)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">63.58%</span>
+        <span class="stat-label">PASCAL-5i Few-Shot HM</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">GRPO / VERL</span>
+        <span class="stat-label">Multimodal RLVR</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dedicated Section: Completed Projects in Computer Vision & ML -->
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-kicker">Core Technical Portfolio</p>
+      <h2 class="section-title">Completed Projects in <span class="accent">Computer Vision</span> &amp; <span class="accent-cyan">ML</span></h2>
+      <p class="section-subtitle">
+        Representative open-source implementations spanning 3D point-cloud coordination, foundation-model arbitration, multimodal reinforcement learning, and enterprise agentic systems.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <article class="project-card highlight">
+        <div class="project-top">
+          <div class="project-tagline">
+            <span class="project-domain">3D Geometric Vision &amp; Foundation Models</span>
+            <span class="project-badge">ACCV 2026</span>
+          </div>
+          <h3>Training-Free 3D Point-Cloud Segmentation via Multi-View Consensus</h3>
+          <p class="project-desc">
+            Engineered a complete training-free 3D semantic segmentation pipeline connecting dense point-cloud representations (RegionPLC) with sparse 2D promptable segmenters (SAM 3). Implemented camera ray-casting and geometric 2D-to-3D lifting using calibrated intrinsics and poses $(K_j, T_j^{cw})$, followed by a non-parametric cross-view consensus rule to suppress projection noise without learned fusion networks.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric-val">+9.62 pts HM Gain (ScanNet++)</div>
+            <div class="project-metric-desc">Evaluated across 312 full indoor scenes (~50M points) on ScanNet200 and ScanNet++ under $\Delta\theta=0$.</div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">RegionPLC</span>
+            <span class="tech-pill">SAM 3</span>
+            <span class="tech-pill">Open3D</span>
+            <span class="tech-pill">Camera Geometry</span>
+            <span class="tech-pill">ScanNet200</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/silsgah" target="_blank" class="link-gh">Code on GitHub ↗</a>
+          <a href="#publications" class="link-paper">ACCV 2026 Paper #482</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-top">
+          <div class="project-tagline">
+            <span class="project-domain">Foundation Model Coordination</span>
+            <span class="project-badge">IEEE TPAMI In Prep</span>
+          </div>
+          <h3>RCASA: Reliability-Calibrated Adaptive Semantic Arbitration</h3>
+          <p class="project-desc">
+            Formulated and implemented a general probabilistic framework for coordinating heterogeneous, frozen foundation models at inference time. Designed controlled Top-$k$ semantic retention experiments that identified and mitigated <em>premature semantic collapse</em>, enabling continuous distribution-level arbitration that recovers discarded class hypotheses without gradient updates.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric-val">+6.40 pts Harmonic Mean</div>
+            <div class="project-metric-desc">Platt confidence calibration + contextual reliability learning with paired bootstrap 95% CIs [5.24, 7.64].</div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">Probability Calibration</span>
+            <span class="tech-pill">Scikit-Learn</span>
+            <span class="tech-pill">GroundingDINO</span>
+            <span class="tech-pill">SAM 2.1</span>
+            <span class="tech-pill">CUDA / Triton</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/silsgah" target="_blank" class="link-gh">Code on GitHub ↗</a>
+          <a href="#publications" class="link-paper">TPAMI Manuscript</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card highlight">
+        <div class="project-top">
+          <div class="project-tagline">
+            <span class="project-domain">Multimodal Reinforcement Learning (RLVR)</span>
+            <span class="project-badge">SACAIR 2026</span>
+          </div>
+          <h3>Label-Free Process Rewards for Grounded Multimodal RL</h3>
+          <p class="project-desc">
+            Developed an intrinsic process-level grounding reward for visual reasoning using physical consensus across independent 3D and image perception sources. Built an end-to-end online GRPO/VERL training pipeline for Qwen2.5-VL-7B-Instruct with vLLM rollout generation, eliminating reliance on human reward labels and stress-testing against reward-hacking vulnerabilities.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric-val">Area Bias $\rho$: 0.72 → 0.334</div>
+            <div class="project-metric-desc">Validated on 1,000+ multimodal reasoning rollouts; verified grounding without degradation of final-answer accuracy.</div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">vLLM</span>
+            <span class="tech-pill">VERL</span>
+            <span class="tech-pill">GRPO</span>
+            <span class="tech-pill">Qwen2.5-VL-7B</span>
+            <span class="tech-pill">RLVR</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/silsgah" target="_blank" class="link-gh">Code on GitHub ↗</a>
+          <a href="#publications" class="link-paper">SACAIR 2026 Submission</a>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card">
+        <div class="project-top">
+          <div class="project-tagline">
+            <span class="project-domain">Open-Vocabulary 2D Segmentation</span>
+            <span class="project-badge">WACV 2027</span>
+          </div>
+          <h3>OpenV-GFSS: Open-Vocabulary Generalized Few-Shot Segmentation</h3>
+          <p class="project-desc">
+            Developed a fully training-free open-vocabulary segmentation framework that composes promptable segmentation proposals with vision-language embeddings and support-set centroids. Conducted systematic ablation of spatial coordinate transformations, documenting aspect-ratio letterboxing versus square-stretch distortion as a key reproducibility confound.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric-val">63.58% HM on PASCAL-5i</div>
+            <div class="project-metric-desc">Strong zero-shot baseline performance without task-specific parameter fine-tuning on COCO-20i.</div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">DINOv2</span>
+            <span class="tech-pill">CLIP</span>
+            <span class="tech-pill">SAM</span>
+            <span class="tech-pill">Open-Vocabulary</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/silsgah" target="_blank" class="link-gh">Code on GitHub ↗</a>
+          <a href="https://arxiv.org/abs/2506.09474" target="_blank" class="link-paper">arXiv:2506.09474 ↗</a>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card">
+        <div class="project-top">
+          <div class="project-tagline">
+            <span class="project-domain">Agentic AI &amp; Enterprise RAG Systems</span>
+            <span class="project-badge">Production System</span>
+          </div>
+          <h3>Ghana Legal AI: Multi-Agent State-Graph RAG Platform</h3>
+          <p class="project-desc">
+            Architected and deployed a production agentic RAG platform for extracting, indexing, and reasoning over complex legal literature (1992 Constitution, Supreme Court rulings). Implemented LangGraph state-graph orchestration with MongoDB Atlas Vector Search (HNSW), cross-encoder semantic reranking, and DeepEval automated hallucination watchdogs.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric-val">3 Specialized Agent Personas</div>
+            <div class="project-metric-desc">Real-time observability with Opik/Comet, Airflow automated ingestion, and Next.js 14 streaming interface.</div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">LangGraph</span>
+            <span class="tech-pill">MongoDB Atlas</span>
+            <span class="tech-pill">DeepEval</span>
+            <span class="tech-pill">Llama 3</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">Next.js 14</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/silsgah" target="_blank" class="link-gh">Code on GitHub ↗</a>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project-card">
+        <div class="project-top">
+          <div class="project-tagline">
+            <span class="project-domain">Large-Scale LLM Engineering</span>
+            <span class="project-badge">MLOps &amp; RL</span>
+          </div>
+          <h3>LLM Twin: Production SFT &amp; DPO Fine-Tuning Pipeline</h3>
+          <p class="project-desc">
+            Engineered an end-to-end LLM lifecycle system following Domain-Driven Design (DDD): data collection crawlers, feature engineering, and automated dataset synthesis. Executed Supervised Fine-Tuning (SFT) and Direct Preference Optimization (DPO) on Llama 3.1 with Qdrant vector retrieval and ZenML pipeline orchestration.
+          </p>
+          <div class="project-metrics">
+            <div class="project-metric-val">Automated SFT &amp; DPO CI/CD</div>
+            <div class="project-metric-desc">AWS SageMaker automated training pipelines with ZenML and Pytest evaluation suites.</div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">Llama 3.1</span>
+            <span class="tech-pill">ZenML</span>
+            <span class="tech-pill">Qdrant</span>
+            <span class="tech-pill">AWS SageMaker</span>
+            <span class="tech-pill">DPO</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/silsgah" target="_blank" class="link-gh">Code on GitHub ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Publications Section (Tagged with Scopus Rankings) -->
+<section class="section" id="publications">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-kicker">Research Outputs</p>
+      <h2 class="section-title">Selected <span class="accent">Publications</span> &amp; Preprints</h2>
+      <p class="section-subtitle">
+        High-impact manuscripts and peer-reviewed articles targeting top-decile (Top 10%) and Q1 (Top 25%) venues indexed in Scopus.
+      </p>
+    </div>
+
+    <div class="pub-list">
+      
+      <!-- Pub 1: TPAMI -->
+      <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h4>Reliability-Calibrated Adaptive Semantic Arbitration of Frozen Foundation Model Representations</h4>
+          <p class="pub-authors"><strong>Gah, S. K.</strong> and Owusu, E.</p>
+          <div class="pub-venue">
+            <span>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) — Under Submission</span>
+            <span class="scopus-tag scopus-top1">Scopus Top 1% (99th Percentile)</span>
+          </div>
+          <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">
+            Formulates non-parametric inference-time coordination ($\Delta\theta=0$), analyzes premature semantic collapse, and proves class-wise boundedness and simplex preservation for foundation-model arbitration.
+          </p>
+          <div class="pub-links">
+            <a href="#projects">Methodology Overview</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 2: WACV -->
+      <div class="pub-card">
+        <div class="pub-year">2027</div>
+        <div class="pub-body">
+          <h4>Training-Free Generalised Few-Shot Segmentation through Open-Vocabulary Semantic Arbitration</h4>
+          <p class="pub-authors"><strong>Gah, S. K.</strong>, Owusu, E., et al.</p>
+          <div class="pub-venue">
+            <span>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027, Paper #167)</span>
+            <span class="scopus-tag scopus-top10">Scopus Top 10% (Core A CV)</span>
+          </div>
+          <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">
+            Investigates training-free composition of promptable segmenters with vision-language embeddings and evaluates spatial coordinate alignment as an underexamined benchmark confound.
+          </p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2506.09474" target="_blank">arXiv:2506.09474 ↗</a>
+            <a href="https://github.com/silsgah" target="_blank">Code ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 3: ACCV -->
+      <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h4>Training-Free Open-Vocabulary 3D Point-Cloud Segmentation on the Generalized Few-Shot Benchmark</h4>
+          <p class="pub-authors"><strong>Gah, S. K.</strong> and Owusu, E.</p>
+          <div class="pub-venue">
+            <span>Asian Conference on Computer Vision (ACCV 2026, Paper #482) · Springer LNCS</span>
+            <span class="scopus-tag scopus-top10">Scopus Top 10% / Tier-1 CV</span>
+          </div>
+          <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">
+            Reconciles dense 3D vision-language predictions with projected 2D concept masks using multi-view geometric consensus, achieving SOTA harmonic mean on ScanNet200 and ScanNet++.
+          </p>
+          <div class="pub-links">
+            <a href="#projects">Project Details</a>
+            <a href="https://github.com/silsgah" target="_blank">Code ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 4: SACAIR -->
+      <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h4>Cross-View Agreement as a Label-Free Process Reward for Multimodal Reasoning</h4>
+          <p class="pub-authors"><strong>Gah, S. K.</strong> and Owusu, E.</p>
+          <div class="pub-venue">
+            <span>Southern African Conference for AI Research (SACAIR 2026) · Springer CCIS</span>
+            <span class="scopus-tag scopus-q1">Scopus Indexed (Springer CCIS)</span>
+          </div>
+          <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">
+            Leverages multi-view physical agreement to supervise GRPO policy optimization for Qwen2.5-VL-7B without human reward labels, eliminating area-bias specification gaming.
+          </p>
+          <div class="pub-links">
+            <a href="#projects">RLVR Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 5: ICICCT / Springer -->
+      <div class="pub-card">
+        <div class="pub-year">2023</div>
+        <div class="pub-body">
+          <h4>Transfer Learning-Based Encoder–Decoder Model for Skin Lesion Segmentation</h4>
+          <p class="pub-authors">Appati, J. K., Boante, L. M., Owusu, E., and <strong>Gah, S. K.</strong></p>
+          <div class="pub-venue">
+            <span>Communications in Computer and Information Science (CCIS), Vol. 1841, pp. 117–128, Springer</span>
+            <span class="scopus-tag scopus-q1">Scopus Indexed (Springer CCIS)</span>
+          </div>
+          <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">
+            Transfer-learning segmentation framework for automated boundary extraction in dermatological lesion analysis.
+          </p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1007/978-3-031-48879-5_10" target="_blank">Springer DOI ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-kicker">Technical Stack</p>
+      <h2 class="section-title">Methods, Models &amp; <span class="accent">Infrastructure</span></h2>
+      <p class="section-subtitle">Proficiencies used daily across doctoral research and systems development.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>3D &amp; Geometric Vision</h3>
+        <div class="skill-tags">
+          <span class="tag accent-tag">Point-Cloud Segmentation</span>
+          <span class="tag accent-tag">2D-to-3D Lifting</span>
+          <span class="tag">Camera Intrinsics / Extrinsics</span>
+          <span class="tag">ScanNet200 / ScanNet++</span>
+          <span class="tag">Cross-View Consensus</span>
+          <span class="tag">Open3D</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Foundation Models &amp; CV</h3>
+        <div class="skill-tags">
+          <span class="tag accent-tag">RegionPLC</span>
+          <span class="tag accent-tag">SAM 3 / SAM 2.1</span>
+          <span class="tag">GroundingDINO</span>
+          <span class="tag">CLIP / DINOv2</span>
+          <span class="tag">Qwen2.5-VL</span>
+          <span class="tag">Open-Vocabulary Perception</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Multimodal RL &amp; LLMs</h3>
+        <div class="skill-tags">
+          <span class="tag accent-tag">GRPO / VERL</span>
+          <span class="tag accent-tag">vLLM Rollouts</span>
+          <span class="tag">Process-Level Rewards</span>
+          <span class="tag">LangGraph State Graphs</span>
+          <span class="tag">DeepEval Watchdogs</span>
+          <span class="tag">MongoDB Vector Search</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Systems &amp; GPU</h3>
+        <div class="skill-tags">
+          <span class="tag accent-tag">PyTorch</span>
+          <span class="tag accent-tag">CUDA Fundamentals</span>
+          <span class="tag">Triton Kernels</span>
+          <span class="tag">Chunked Float16 Caching</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Linux / Slurm</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Statistical Rigor</h3>
+        <div class="skill-tags">
+          <span class="tag accent-tag">Platt Calibration</span>
+          <span class="tag accent-tag">ECE / Brier Diagnostics</span>
+          <span class="tag">Bootstrap 95% CIs</span>
+          <span class="tag">Top-k Retention Analysis</span>
+          <span class="tag">Ablation Studies</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Languages &amp; Core Dev</h3>
+        <div class="skill-tags">
+          <span class="tag accent-tag">Python (Expert)</span>
+          <span class="tag accent-tag">C++</span>
+          <span class="tag">TypeScript / JavaScript</span>
+          <span class="tag">Java</span>
+          <span class="tag">SQL / PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Documents & Downloads -->
+<section class="section" id="downloads">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-kicker">Application Dossier</p>
+      <h2 class="section-title">Academic &amp; Research <span class="accent">Documents</span></h2>
+      <p class="section-subtitle">Downloadable curriculum vitae, research proposals, and thesis synopsis.</p>
+    </div>
+    <div class="downloads-grid">
+      <div class="download-card">
+        <div>
+          <h4>Academic CV (General)</h4>
+          <p>Complete academic curriculum vitae including publications, doctoral research, and technical leadership.</p>
+        </div>
+        <a href="Silas_Kwabla_Gah_Academic_CV.pdf" target="_blank" class="download-link">Download PDF ↓</a>
+      </div>
+      <div class="download-card">
+        <div>
+          <h4>Postdoctoral CV (Bern)</h4>
+          <p>CV customized for Deep Learning, World Models, and Test-Time Adaptation.</p>
+        </div>
+        <a href="Silas_Gah_CV_Bern.pdf" target="_blank" class="download-link">Download PDF ↓</a>
+      </div>
+      <div class="download-card">
+        <div>
+          <h4>Statement of Purpose (Bern)</h4>
+          <p>Collaborative World Models, Semantic Evidence Preservation, and Test-Time Adaptation proposal.</p>
+        </div>
+        <a href="Silas_Gah_Statement_of_Purpose_Bern.pdf" target="_blank" class="download-link">Download PDF ↓</a>
+      </div>
+      <div class="download-card">
+        <div>
+          <h4>Doctoral Research Statement</h4>
+          <p>Comprehensive overview of completed doctoral methodology (RCASA, 3D GFS-PCS, RLVR).</p>
+        </div>
+        <a href="Research_Statement.pdf" target="_blank" class="download-link">Download PDF ↓</a>
+      </div>
+      <div class="download-card">
+        <div>
+          <h4>Thesis Synopsis</h4>
+          <p>Executive synopsis of doctoral thesis submitted to the University of Ghana.</p>
+        </div>
+        <a href="Thesis_Synopsis.pdf" target="_blank" class="download-link">Download PDF ↓</a>
+      </div>
+      <div class="download-card">
+        <div>
+          <h4>Cover Letter (Bern)</h4>
+          <p>Cover letter addressed to Prof. Paolo Favaro and the CVG Selection Committee.</p>
+        </div>
+        <a href="Silas_Gah_Cover_Letter_Bern.pdf" target="_blank" class="download-link">Download PDF ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-kicker">Get in Touch</p>
+      <h2 class="section-title">Contact &amp; <span class="accent">Academic Profiles</span></h2>
+      <p class="section-subtitle">Open to postdoctoral fellowships, research scientist roles, and collaborative AI research.</p>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:gahsilas@gmail.com" class="contact-card">
+        <h4>Direct Email</h4>
+        <p>gahsilas@gmail.com</p>
+      </a>
+      <a href="https://github.com/silsgah" target="_blank" class="contact-card">
+        <h4>GitHub</h4>
+        <p>github.com/silsgah</p>
+      </a>
+      <a href="https://www.linkedin.com/in/silas-gah-46b126294" target="_blank" class="contact-card">
+        <h4>LinkedIn</h4>
+        <p>silas-gah-46b126294</p>
+      </a>
+      <a href="https://orcid.org/0000-0002-9349-3435" target="_blank" class="contact-card">
+        <h4>ORCID</h4>
+        <p>0000-0002-9349-3435</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 Silas Kwabla Gah · Department of Computer Science, University of Ghana · <a href="https://silsgah.github.io">silsgah.github.io</a></p>
+</footer>
+
 <script>
-const nav=document.getElementById('nav'),navToggle=document.getElementById('navToggle'),navLinks=document.getElementById('navLinks'),sections=document.querySelectorAll('.section,.hero');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50);let current='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-130)current=s.id});navLinks.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))});navToggle.addEventListener('click',()=>navLinks.classList.toggle('open'));navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));const reveal=document.querySelectorAll('.section-title,.section-subtitle,.vision-card,.focus-card,.research-card,.pub-item,.news-item,.skill-group,.timeline-item,.download-card,.contact-card');reveal.forEach(e=>e.classList.add('reveal'));const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});reveal.forEach(e=>observer.observe(e));
+  const nav=document.getElementById('nav'),navToggle=document.getElementById('navToggle'),navLinks=document.getElementById('navLinks');
+  window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)});
+  navToggle.addEventListener('click',()=>navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
 </script>
+
 </body>
 </html>
