@@ -247,32 +247,32 @@
       </article>
 
       <!-- Project 2 -->
-      <article class="project-card">
+      <article class="project-card highlight">
         <div class="project-top">
           <div class="project-tagline">
-            <span class="project-domain">Foundation Model Coordination</span>
-            <span class="project-badge">IEEE TPAMI In Prep</span>
+            <span class="project-domain">Foundation Model Composition</span>
+            <span class="project-badge">ICLR 2027 Submission</span>
           </div>
-          <h3>RCASA: Reliability-Calibrated Adaptive Semantic Arbitration</h3>
+          <h3>Beyond Argmax: Semantic Retention in Frozen Foundation Models</h3>
           <p class="project-desc">
-            Formulated and implemented a general probabilistic framework for coordinating heterogeneous, frozen foundation models at inference time. Designed controlled Top-$k$ semantic retention experiments that identified and mitigated <em>premature semantic collapse</em>, enabling continuous distribution-level arbitration that recovers discarded class hypotheses without gradient updates.
+            Formulated and executed controlled causal interventions across 312 3D indoor scenes (~50M points on ScanNet200 and ScanNet++) to investigate <em>premature semantic collapse</em>—the permanent loss of secondary hypotheses caused by hard $\operatorname{argmax}$ operations. Designed Top-$k$ distribution-retention protocols enabling cross-model consensus to recover overlooked novel classes at test time without gradient updates.
           </p>
           <div class="project-metrics">
-            <div class="project-metric-val">+6.40 pts Harmonic Mean</div>
-            <div class="project-metric-desc">Platt confidence calibration + contextual reliability learning with paired bootstrap 95% CIs [5.24, 7.64].</div>
+            <div class="project-metric-val">+6.40 pts Harmonic Mean (28.47 → 34.87)</div>
+            <div class="project-metric-desc">Paired bootstrap 95% CIs [5.24, 7.64] across 312 scenes; recovers discarded class candidates non-parametrically.</div>
           </div>
           <div class="project-tech">
             <span class="tech-pill">PyTorch</span>
-            <span class="tech-pill">Probability Calibration</span>
-            <span class="tech-pill">Scikit-Learn</span>
-            <span class="tech-pill">GroundingDINO</span>
-            <span class="tech-pill">SAM 2.1</span>
-            <span class="tech-pill">CUDA / Triton</span>
+            <span class="tech-pill">Foundation Models</span>
+            <span class="tech-pill">Causal Interventions</span>
+            <span class="tech-pill">ScanNet200 / ScanNet++</span>
+            <span class="tech-pill">Distribution Retention</span>
+            <span class="tech-pill">CUDA</span>
           </div>
         </div>
         <div class="project-links">
           <a href="https://github.com/silsgah" target="_blank" class="link-gh">Code on GitHub ↗</a>
-          <a href="#publications" class="link-paper">TPAMI Manuscript</a>
+          <a href="#publications" class="link-paper">ICLR 2027 Submission ↗</a>
         </div>
       </article>
 
@@ -409,21 +409,22 @@
 
     <div class="pub-list">
       
-      <!-- Pub 1: TPAMI -->
+      <!-- Pub 1: ICLR 2027 -->
       <div class="pub-card">
-        <div class="pub-year">2026</div>
+        <div class="pub-year">2027</div>
         <div class="pub-body">
-          <h4>Reliability-Calibrated Adaptive Semantic Arbitration of Frozen Foundation Model Representations</h4>
+          <h4>Beyond Argmax: A Mechanistic Study of Semantic Retention in Frozen Foundation-Model Composition for Generalized Few-Shot 3D Segmentation</h4>
           <p class="pub-authors"><strong>Gah, S. K.</strong> and Owusu, E.</p>
           <div class="pub-venue">
-            <span>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) — Under Submission</span>
-            <span class="scopus-tag scopus-top1">Scopus Top 1% (99th Percentile)</span>
+            <span>International Conference on Learning Representations (ICLR 2027 Conference Submission)</span>
+            <span class="scopus-tag scopus-top1">Scopus Top 1% (CORE A* AI/ML Venue)</span>
           </div>
           <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">
-            Formulates non-parametric inference-time coordination ($\Delta\theta=0$), analyzes premature semantic collapse, and proves class-wise boundedness and simplex preservation for foundation-model arbitration.
+            Matched causal interventions across 312 indoor 3D scenes (~50M points) of ScanNet200 and ScanNet++ to investigate premature semantic collapse in multi-model composition. Demonstrates that preserving compact Top-$k$ semantic distributions allows downstream cross-model consensus to recover overlooked novel classes (+6.40 pts harmonic mean).
           </p>
           <div class="pub-links">
-            <a href="#projects">Methodology Overview</a>
+            <a href="#projects">Project Details</a>
+            <a href="https://github.com/silsgah" target="_blank">Code on GitHub ↗</a>
           </div>
         </div>
       </div>
@@ -502,6 +503,25 @@
           </p>
           <div class="pub-links">
             <a href="https://doi.org/10.1007/978-3-031-48879-5_10" target="_blank">Springer DOI ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 6: TPAMI (In Prep) -->
+      <div class="pub-card">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h4>Reliability-Calibrated Adaptive Semantic Arbitration of Frozen Foundation Model Representations</h4>
+          <p class="pub-authors"><strong>Gah, S. K.</strong> and Owusu, E.</p>
+          <div class="pub-venue">
+            <span>Target: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) — Manuscript in Preparation</span>
+            <span class="scopus-tag scopus-top1" style="background:rgba(148, 163, 184, 0.12); color:#cbd5e1; border-color:rgba(148, 163, 184, 0.28);">IEEE TPAMI (In Preparation)</span>
+          </div>
+          <p style="color:var(--muted); font-size:0.88rem; margin-bottom:0.75rem;">
+            Formulates non-parametric inference-time coordination ($\Delta\theta=0$), analyzes reliability calibration under distribution shift, and proves class-wise boundedness and simplex preservation for foundation-model arbitration.
+          </p>
+          <div class="pub-links">
+            <a href="#projects">Methodology Overview</a>
           </div>
         </div>
       </div>
