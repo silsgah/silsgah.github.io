@@ -1091,3 +1091,39 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ==============================================================================
+   Print Stylesheet
+   ============================================================================== */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+  nav.top,
+  .mobile-toggle,
+  .theme-toggle,
+  .pipeline-card,
+  footer {
+    display: none !important;
+  }
+  .wrap {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  .hero-card,
+  .featured-card,
+  .pub-card,
+  .thrust-card,
+  .course-card,
+  .dossier-card {
+    border: 1px solid #cccccc !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+  a {
+    color: #000000 !important;
+    text-decoration: underline;
+  }
+}
